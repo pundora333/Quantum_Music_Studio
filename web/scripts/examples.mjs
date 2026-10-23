@@ -1,0 +1,20 @@
+import fs from 'node:fs';import vm from 'node:vm';
+import {defaults,acquire,mappedFrequencies,EPSILON} from '../dist/studio-model.js';
+import {renderFile,referenceToneData,wavHeader} from '../dist/studio-audio.js';
+import {NOTE_BANK,noteCSV} from '../dist/notes.js';
+const out=process.argv[2];if(!out)throw Error('Supply output directory.');fs.mkdirSync(out,{recursive:true});
+const writeJSON=(name,value)=>fs.writeFileSync(out+'/'+name,JSON.stringify(value,null,2));
+const c=defaults();Object.assign(c,{circuit:[{step:0,q:0,type:'Ry',angle:90}],observed:'q0',stereo:'center',j:20,windowMs:400,duration:8,level:-3});c.qubits.forEach((q,i)=>{q.nu=i?-13:9;q.t1=i?1200:1000;q.t2=i?300:220;q.star=i?95:70;});c.source='Synthetic teaching example · illustrative parameters';const data=acquire(c),f=mappedFrequencies(c);
+const doc={format:'pundora-fid-v3',model:c.model,source:c.source,normalization:'signal = physical M / epsilon',epsilon:EPSILON,physicalWindowMs:c.windowMs,audioDurationSeconds:c.duration,carrierHz:[f[0],f[2]],levelDb:c.level,audioGainScale:.8,stereo:c.stereo,referenceA4Hz:435,observed:c.observed,notes:'Dry FID-carrier mapping. q0 centered to both speakers. Synthetic example, not recorded SpinQ/QPU data.',timeMs:Array.from({length:data.samples},(_,i)=>i*data.dt*1000),q0Re:Array.from({length:data.samples},(_,i)=>data.signal[0][2*i]),q0Im:Array.from({length:data.samples},(_,i)=>data.signal[0][2*i+1]),q1Re:Array.from({length:data.samples},(_,i)=>data.signal[1][2*i]),q1Im:Array.from({length:data.samples},(_,i)=>data.signal[1][2*i+1]),configuration:c};
+writeJSON('Minimal_Circuit_FID.json',doc);writeJSON('Minimal_Circuit_Session.json',c);
+const sandbox={};vm.runInNewContext(fs.readFileSync('dist/vendor/lame.min.js','utf8'),sandbox);
+async function saveAudio(name,d,cfg,formats=['wav','mp3']){for(const format of formats){const blob=await renderFile(d,cfg,format,{encoderFactory:()=>new sandbox.lamejs.Mp3Encoder(2,44100,128)});fs.writeFileSync(out+'/'+name+'.'+format,Buffer.from(await blob.arrayBuffer()));}}
+await saveAudio('NMR_FID_Student_Demo',data,c);
+const both=structuredClone(c);both.circuit.push({step:0,q:1,type:'Ry',angle:90});both.observed='both';both.stereo='split';both.j=0;both.qubits.forEach(q=>q.nu=0);both.echo=true;both.tauMs=100;writeJSON('Hahn_Echo_Session.json',both);await saveAudio('Hahn_Echo_Student_Demo',acquire(both),both);
+const plain=structuredClone(both);plain.echo=false;writeJSON('Free_FID_Both_Session.json',plain);await saveAudio('Free_FID_Both_Student_Demo',acquire(plain),plain);
+const tone=structuredClone(c);Object.assign(tone,{root:435,j:0,sound:'fid',tuning:'equal',stereo:'center',observed:'q0',duration:2,level:-6,fx:0});tone.qubits.forEach(q=>q.nu=0);await saveAudio('Audio_Test_A4_435Hz',referenceToneData(),tone);
+fs.mkdirSync(out+'/Note_Bank',{recursive:true});fs.writeFileSync(out+'/Notes_C3_B5_A4_435Hz.csv',noteCSV());writeJSON('Notes_C3_B5_A4_435Hz.json',{referenceA4Hz:435,tuning:'12-TET',notation:'Scientific pitch notation',notes:NOTE_BANK});
+const pieces=[];for(const n of NOTE_BANK){const cfg={...tone,root:n.hz,duration:1};const b=Buffer.from(await (await renderFile(referenceToneData(),cfg,'wav')).arrayBuffer()),name=n.name.replaceAll('♯','sharp').replaceAll('♭','flat').replaceAll('/','_');fs.writeFileSync(out+'/Note_Bank/'+name+'.wav',b);pieces.push(b.subarray(44));}
+const pcm=Buffer.concat(pieces);fs.writeFileSync(out+'/All_36_Notes_A4_435Hz.wav',Buffer.concat([Buffer.from(wavHeader(pcm.length/4)),pcm]));
+const encoder=new sandbox.lamejs.Mp3Encoder(2,44100,128),mp3=[];for(let at=0;at<pcm.length/4;at+=1152){const size=Math.min(1152,pcm.length/4-at),l=new Int16Array(size),r=new Int16Array(size);for(let i=0;i<size;i++){l[i]=pcm.readInt16LE((at+i)*4);r[i]=pcm.readInt16LE((at+i)*4+2);}const chunk=encoder.encodeBuffer(l,r);if(chunk.length)mp3.push(Buffer.from(chunk));}mp3.push(Buffer.from(encoder.flush()));fs.writeFileSync(out+'/All_36_Notes_A4_435Hz.mp3',Buffer.concat(mp3));
+console.log('Louder synthetic FID/echo examples, centered 435 Hz test and all 36 reference notes generated.');

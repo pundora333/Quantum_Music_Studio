@@ -1,0 +1,145 @@
+/* Task-oriented desktop layout. Data/physics controls retain their original DOM. */
+.interface-17{font-size:15px;line-height:1.55}
+.interface-17 main{max-width:1920px;padding:0 18px;margin:auto}
+.interface-17 .topbar{height:auto;min-height:52px;padding:8px 22px;gap:16px}
+.interface-17 .brand{letter-spacing:1.5px}.interface-17 .brand small{font-size:10px;letter-spacing:.6px}
+.interface-17 .intro{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%)}
+.interface-17 .header-motto{font-size:17px;letter-spacing:0}.interface-17 .top-meta{gap:12px}
+.language-selector{font-size:12px;display:flex;align-items:center;gap:8px;color:#decbf0;letter-spacing:0}
+.language-selector select{height:36px;padding:4px 7px;font-size:13px;min-width:95px}
+.interface-17 .bench-tabs{margin:8px 0;gap:8px}.interface-17 .bench-tabs button{padding:7px 14px;font-size:15px;min-height:40px}
+.interface-17 .bench-tabs button span{display:none}
+.shared-transport{position:sticky;top:0;z-index:24;display:grid;grid-template-columns:minmax(240px,1fr) auto auto;gap:6px 14px;align-items:center;background:#150d20f7;border:1px solid #70548a;border-radius:12px;padding:10px 14px;box-shadow:0 6px 20px #0005}
+.shared-identity{display:flex;align-items:center;gap:14px;min-width:0}.shared-identity strong{color:#e6d6fb;white-space:nowrap;font-size:14px}
+.shared-identity label{display:grid;gap:2px;min-width:0;font-size:11px;color:#cdb6e3;flex:1}
+.shared-identity select{width:100%;height:35px;min-width:130px;max-width:360px;text-overflow:ellipsis;font-size:13px}
+.shared-actions,.shared-tools{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.shared-transport button{min-height:38px;padding:7px 10px;font-size:13px}.shared-actions>.play-button{min-width:105px;justify-content:center}
+.shared-summary{grid-column:1/-1;font-size:12px;color:#d6c3e7;margin:2px 0 0;line-height:1.35}.shared-status{grid-column:1/-1;font-size:12px;color:#c2d6ff;margin:0}.shared-status:empty{display:none}
+.interface-17 .lab-view-switch{margin:8px 0;gap:8px}.interface-17 .lab-view-switch button{min-height:36px;padding:6px 14px;font-size:14px}
+.interface-17 .legacy-transport,.interface-17 .mobile-transport,.interface-17 #music-export-jump,.interface-17 #studio-export-jump{display:none!important}
+.lab-shell{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;align-items:start;min-width:0}
+.lab-shell.inspector-open{grid-template-columns:minmax(0,1fr) 290px}
+.lab-main,.deck-column,.lab-inspector{min-width:0;max-width:100%}
+.interface-17 .deck-workspace{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin:0}
+.deck-column{display:flex;flex-direction:column;gap:12px;align-items:stretch}
+.deck-heading{font-size:15px;font-weight:600;letter-spacing:0;color:#d8b9f4;margin:2px 2px 0}
+.lab-inspector{border:1px solid #5c4471;background:#160e20;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:12px}
+.inspector-heading{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.inspector-close{min-width:38px;min-height:38px;font-size:16px}
+.control-explanation{padding:12px;background:#21132e;border-radius:8px;border-left:3px solid #bc90ee}
+.control-explanation h3{font-size:16px;margin:0 0 10px;color:#f0e4fb}
+.control-explanation p{font-size:14px;line-height:1.65;color:#e0cdef;margin:8px 0}
+.control-explanation .context-observe{color:#c6d7ff}.control-explanation .change-feedback{font-size:12px;border-top:1px solid #604773;padding-top:8px;color:#f1c1e3}
+.change-feedback:empty{display:none}
+.interface-17 .panel{padding:15px;border-color:#523b65;background:#170f22;border-radius:10px;margin:0;min-width:0}
+.interface-17 .panel h2{font-size:16px;letter-spacing:0;line-height:1.4}
+.interface-17 .panel-title{margin-bottom:6px;gap:8px}.interface-17 .panel-title .tag{font-size:10px;letter-spacing:0}
+.context-help{flex:0 0 32px;height:32px;border:1px solid #8a67aa;border-radius:50%;font:600 15px inherit;color:#ecdcfb;background:#34203f}
+.interface-17 .section-number{display:none}
+.interface-17 .qubits{gap:16px;margin-top:8px}.interface-17 .qubit+.qubit{padding-left:16px}
+.interface-17 .qubit-heading h3{font-size:14px}.interface-17 .qubit-heading .tiny{font-size:10px;letter-spacing:0}
+.interface-17 .bloch,.interface-17 .bloch svg{height:108px}
+.interface-17 .slider-row{margin-bottom:8px}.interface-17 .slider-row label,.interface-17 .slider-row output{font-size:13px}
+.interface-17 input[type=range]{min-height:6px;margin:9px 0 5px}
+.interface-17 input[type=range]::-webkit-slider-thumb{width:18px;height:18px}
+.interface-17 .coupling{padding:9px;margin-top:5px}.interface-17 .switch-label strong{font-size:13px}.interface-17 .switch-label small{font-size:11px}
+.interface-17 .integrated-pipeline{margin:10px 0 0}.interface-17 .integrated-pipeline>p{font-size:11px;margin:5px 0}
+.interface-17 .pipeline-cell{font-size:11px;padding:5px;min-width:74px;min-height:32px}.interface-17 .pipeline-heading{font-size:10px;max-width:115px}
+.interface-17 .integrated-pipeline h3{font-size:12px;margin:5px 0}.interface-17 .pipeline-scroll{padding-bottom:4px}
+.interface-17 .probability-chart{height:130px;padding:8px 10px 0;gap:12px}.interface-17 .chart-caption{font-size:12px;margin-top:29px}
+.interface-17 .prob-column output,.interface-17 .prob-column label{font-size:12px}
+.interface-17 .measurement-top{flex-wrap:wrap;gap:6px}.interface-17 .measurement-top p{max-width:none;margin:4px 0}
+.interface-17 .basis-controls label{font-size:13px}.interface-17 .basis-controls select{font-size:13px;height:34px}
+.sound-basics{display:flex;flex-direction:column;gap:12px}.sound-basic-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sound-basic-fields>.transport-controls{display:flex;flex-wrap:wrap;padding:0;border:0;gap:14px;grid-column:1/-1;justify-content:flex-start}
+.sound-basic-fields>.nmr-tempo-controls{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:end;margin:0}
+.sound-basic-fields>.nmr-tempo-controls select{max-width:none;width:100%}.sound-basic-fields>.nmr-tempo-controls>.tag{display:none}
+.sound-basic-fields label,.sound-basics .compact-field,.sound-basics .volume-field{font-size:13px;letter-spacing:0;color:#decaed}
+.sound-basic-fields input[type=number],.sound-basic-fields select{width:100%;height:37px;font-size:14px}.sound-basic-fields .field,.sound-basic-fields>.volume-field{min-width:0}
+.sound-basics .mode-toggle{margin:0}.sound-basics .mode-toggle button{padding:8px}.sound-basics .mode-toggle strong{font-size:14px}.sound-basics .mode-toggle span{font-size:11px}
+.sound-basics .shot-footer{margin:0;padding:8px 0 0}.sound-basics .shot-footer .text-button{font-size:13px}
+.nmr-time-summary{font-size:12px;line-height:1.7;color:#c2d6ff;border-top:1px solid #56406b;padding-top:8px;margin:0}
+.interface-17 #music-fx-panel>p,.interface-17 #music-fx-panel>.micro-note{display:none}
+.interface-17 .fx-cards{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px}
+.interface-17 .fx-card{display:grid;grid-template-columns:1fr 1.2fr;gap:4px 12px;padding:10px;border-color:#5b416d;background:#21132d;min-width:0}
+.interface-17 .fx-card h3{font-size:14px;margin:0}.interface-17 .fx-card>p{display:none}.interface-17 .fx-card .fx-enable{font-size:12px;justify-self:end}
+.interface-17 .fx-card>.fx-range{grid-column:1/-1;font-size:13px}.interface-17 .fx-card>.workflow-advanced{grid-column:1/-1;margin:2px 0}
+.fx-state-note{font-size:11px;color:#c6b4da;grid-column:1/-1}.fx-inactive{border-style:dashed!important}
+.interface-17 .workflow-advanced,.interface-17 .advanced-block,.interface-17 .deck-details{margin:0;min-width:0;border:1px solid #5c4471;border-radius:9px;padding:4px;background:#180f23}
+.interface-17 summary{font-size:13px;line-height:1.5;letter-spacing:0;cursor:pointer;padding:8px;color:#e4d1f4}
+.interface-17 .lab-inspector .panel{padding:10px}.interface-17 .lab-inspector .compact-audio-options,.interface-17 .lab-inspector .preview-bank,.interface-17 .lab-inspector .preset-library,.interface-17 .lab-inspector .export-panel{margin:0;padding:6px;border:1px solid #5c4471;background:#180f23;min-width:0}
+.interface-17 .lab-inspector .studio-fields,.interface-17 .lab-inspector .music-gate-toolbar{grid-template-columns:1fr;gap:10px}
+.interface-17 .lab-inspector .studio-buttons{gap:6px}.interface-17 .lab-inspector button{white-space:normal;font-size:13px;min-height:36px}
+.interface-17 .lab-inspector label{font-size:13px}.interface-17 .lab-inspector .export-grid{grid-template-columns:1fr}.interface-17 .lab-inspector select{width:100%;max-width:100%;font-size:13px}
+.interface-17 .lab-inspector input[type=text]{background:#21132d;color:#f0e4fa;border:1px solid #79578e;border-radius:6px;max-width:100%;width:100%;min-height:38px;font:inherit;padding:7px}
+.interface-17 .preview-bank h3{font-size:14px}.preview-rename{display:grid;gap:6px;margin:10px 0}.preview-scope-note,.export-limit-note{color:#d6c0e7;font-size:12px;line-height:1.6}
+.interface-17 .contextual-note{font-size:12px;line-height:1.55;color:#c2d6ff;margin:7px 0;padding:7px;border-left:2px solid #779ac7;background:#15172b}
+.interface-17 .qubit-studio-grid{gap:12px;grid-template-columns:1fr 1fr}.interface-17 .studio-bloch{height:140px}
+.interface-17 .studio-slider{padding:0;background:none;border:0;margin:8px 0}.interface-17 .studio-slider label,.interface-17 .studio-slider output{font-size:12px}
+.interface-17 .studio-plot{height:150px;max-height:180px}.interface-17 .plot-box{margin-top:10px;padding:10px}.interface-17 .plot-heading h3{font-size:13px}.interface-17 .plot-heading span{font-size:10px}
+.interface-17 .studio-buttons{gap:7px;flex-wrap:wrap}.interface-17 .studio-buttons button{white-space:normal}
+.interface-17 .studio-fields{gap:10px}.interface-17 .studio-fields label{font-size:13px}.interface-17 .plot-caption,.interface-17 .studio-hint,.interface-17 .panel-description{font-size:12px;line-height:1.6}
+.interface-17 .sequence-panel{padding:10px}.interface-17 .steps{grid-template-columns:repeat(8,minmax(0,1fr));gap:5px;margin-top:10px}.interface-17 .step{min-height:50px;padding:11px 2px 4px;font-size:13px}.interface-17 .step small{font-size:9px}.interface-17 .step>span:last-child{font-size:11px;color:#e3cff5}
+.interface-17 .step[data-outcome='2']{background:#251b36;border-color:#6a4a89;color:#e2c8fa}.interface-17 .step[data-outcome='3']{background:#171e37;border-color:#4b649b;color:#c3d4fa}
+.interface-17 #music-workbench[data-view=explore] .lab-main>.workspace,.interface-17 #studio-workbench[data-view=explore] .lab-main>.studio-layout{display:none}
+.interface-17 .experiment-panel{padding:12px;margin:8px 0}.interface-17 .experiment-panel h2{font-size:18px}.interface-17 .experiment-explanation{font-size:14px}.interface-17 .experiment-controls{grid-template-columns:1fr 1fr;gap:12px}.interface-17 .experiment-controls .panel{padding:12px}.interface-17 .experiment-launcher,.interface-17 .experiment-tabs{margin:0 0 8px;gap:6px}.interface-17 .experiment-launcher button,.interface-17 .experiment-tab button{font-size:13px;padding:8px}
+.interface-17 #guide-workbench{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:14px 0}.interface-17 #guide-workbench[hidden]{display:none}
+.interface-17 #guide-workbench .panel p{font-size:15px;line-height:1.7}.interface-17 #guide-workbench button{margin:4px;white-space:normal;font-size:14px;min-height:40px}
+.interface-17 #guide-workbench>.panel:first-child{grid-column:1/-1}.interface-17 footer{padding:10px 0;font-size:10px;letter-spacing:0}
+@media(min-width:960px) and (min-height:700px){.interface-17 .lab-shell{height:var(--deck-height,calc(100dvh - 235px));align-items:stretch}.interface-17 .lab-main{min-height:0;height:100%;overflow:hidden}.interface-17 .deck-workspace{height:100%;min-height:0}.interface-17 .deck-scroll{height:100%;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#795895 #160e21;overscroll-behavior-y:contain;padding-bottom:14px}.interface-17 .deck-column{padding-right:5px}.interface-17 .experiment-workspace{height:100%;overflow-y:auto;padding-right:6px}.interface-17 .lab-inspector{padding-bottom:16px}}
+@media(max-width:1279px){.lab-shell.inspector-open{grid-template-columns:1fr}.lab-inspector{position:fixed;right:14px;top:150px;bottom:14px;width:min(365px,calc(100vw - 28px));height:auto!important;overflow-y:auto;z-index:30;box-shadow:0 12px 60px #000b;border-color:#ab7ece}.shared-transport{grid-template-columns:minmax(200px,1fr) auto}.shared-tools{grid-column:2;grid-row:2;justify-content:flex-end}.shared-summary{grid-column:1;grid-row:2}.shared-transport button{font-size:12px;padding:7px 9px}.shared-identity{gap:8px}.shared-identity strong{font-size:13px}.interface-17 .header-motto{display:none}}
+@media(max-width:959px){.interface-17 main{padding:0 12px}.interface-17 .deck-workspace,.interface-17 .experiment-controls{grid-template-columns:1fr}.interface-17 .lab-shell{height:auto}.interface-17 .deck-column{height:auto;overflow:visible}.interface-17 #guide-workbench{grid-template-columns:1fr 1fr}.shared-identity{grid-column:1/-1}.shared-actions{grid-row:2;grid-column:1}.shared-tools{grid-row:3;grid-column:1/-1;justify-content:flex-start}.shared-summary{grid-row:4;grid-column:1/-1}.shared-status{grid-row:5}.shared-transport{grid-template-columns:1fr;gap:7px}.shared-identity select{max-width:none}.shared-transport button{min-height:40px}.interface-17 .topbar{padding:8px 12px}.language-selector span{display:none}}
+@media(max-width:520px){.interface-17 .brand{font-size:12px}.interface-17 .brand-mark{display:none}.interface-17 .private{display:none}.interface-17 .bench-tabs{grid-template-columns:1fr 1fr 1fr}.interface-17 .bench-tabs button{min-width:0;padding:8px 4px;font-size:13px}.interface-17 .top-meta{gap:6px}.shared-actions{gap:5px}.shared-actions .text-button{font-size:12px}.shared-actions>.play-button{min-width:90px}.shared-tools button{font-size:12px;min-height:36px}.shared-summary{font-size:11px}.sound-basic-fields{grid-template-columns:1fr 1fr}.interface-17 .fx-card{grid-template-columns:1fr}.interface-17 .fx-enable{justify-self:start!important}.interface-17 #guide-workbench{grid-template-columns:1fr}.interface-17 .panel{padding:12px}.interface-17 .qubit-studio-grid{grid-template-columns:1fr 1fr}.interface-17 .studio-bloch{height:115px}.interface-17 .lab-inspector{top:100px}.interface-17 .entanglement{font-size:11px}.interface-17 .topbar .brand small{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.interface-17 *{scroll-behavior:auto!important;transition:none!important}}
+
+.shared-source-note{grid-column:1/-1;color:#c2d6ff;font-size:12px;line-height:1.5;margin:0}.shared-source-note:empty{display:none}
+/* 1.7.1: undistorted spheres, named reopeners and unclipped explanations. */
+.interface-17 #shared-explain,.interface-17 #shared-methods{white-space:normal;line-height:1.3}
+.interface-17 .qubit-studio-grid .studio-bloch{display:block;width:100%;height:auto!important;max-height:none;max-width:320px;aspect-ratio:11/9;margin:4px auto;object-fit:contain;filter:drop-shadow(0 0 10px #8c5dc022)}
+.nmr-state-circuit{display:flex;flex-direction:column;gap:12px;border:1px solid #785096;border-radius:12px;padding:8px;background:#120c1c}
+.nmr-state-circuit #ui-circuit-details{border-color:#785096}.nmr-state-circuit #ui-circuit-details>summary{font-weight:600}
+.interface-17 .download-explanation,.interface-17 .session-save-note{font-size:13px;line-height:1.65;color:#dfcdea;padding:8px;background:#23162f;border-left:2px solid #bc90ee;margin:8px 0}
+.ui-tooltip[popover]{margin:0;inset:auto;z-index:2147483646;max-height:calc(100dvh - 24px);overflow:auto}
+.reference-dialog{width:min(1100px,calc(100vw - 32px));max-width:1100px;max-height:88dvh;padding:0;border:1px solid #9b72bd;border-radius:14px;background:#170e22;color:#eee0fa;box-shadow:0 18px 70px #000c}
+.reference-dialog::backdrop{background:#08050ddb;backdrop-filter:blur(4px)}
+.reference-header{position:sticky;top:0;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;background:#251632;z-index:1}
+.reference-header h2{font-size:20px;margin:0}.reference-header button{min-height:40px;min-width:40px}
+.reference-body{padding:20px;line-height:1.75;overflow-wrap:anywhere}.reference-body>details>summary{display:none}.reference-body .methods{display:block;padding:0;margin:0}.reference-body .methods-title{margin-bottom:18px}.reference-body .methods-content{max-width:none}.reference-body p{font-size:15px;line-height:1.8}.reference-body .studio-fields{grid-template-columns:repeat(2,minmax(0,1fr))}.reference-body details{margin:10px 0}.reference-body>details[hidden]{display:none}
+@media(max-width:959px){.reference-body{padding:14px}.reference-body .studio-fields{grid-template-columns:1fr}.reference-dialog{max-height:92dvh}.interface-17 .qubit-studio-grid .studio-bloch{max-width:280px}}
+/* Music and NMR share the same two-wire circuit visual grammar. */
+.interface-17 #music-circuit-details{margin-top:12px}
+.interface-17 #music-circuit-panel>.panel-title,.interface-17 #music-circuit-panel>.music-circuit-intro{margin-bottom:10px}
+.interface-17 .music-circuit-builder{grid-template-columns:148px minmax(0,1fr);gap:12px;container-type:inline-size}
+.interface-17 .music-gate-palette{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.interface-17 .music-gate-palette button{display:flex;flex-direction:column;gap:4px;align-items:center;justify-content:center;min-height:53px;padding:6px 4px;line-height:1.2}
+.interface-17 .music-gate-palette strong{font-size:15px;font-weight:600}
+.interface-17 .music-gate-palette small{font-size:10px;line-height:1.3;font-weight:400;letter-spacing:0;overflow-wrap:anywhere}
+.interface-17 .music-circuit-workspace{min-width:0}
+.interface-17 .music-gate-toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px;align-items:end}
+.interface-17 .music-gate-toolbar label{display:grid;gap:4px;min-width:90px;font-size:12px;letter-spacing:0}
+.interface-17 .music-gate-toolbar select,.interface-17 .music-gate-toolbar input{width:100%;height:36px;font-size:13px;background:#21132d;color:#efdefb;border:1px solid #76548c;border-radius:6px;padding:5px}
+.interface-17 .music-gate-toolbar input{max-width:110px}
+.interface-17 .music-circuit-scroll{margin-top:0;overflow-x:auto;padding:4px 3px 12px}
+.interface-17 .music-circuit{gap:8px;min-width:0;padding:0;position:relative}
+.interface-17 .music-circuit .music-gate-cell{position:relative;min-width:54px;min-height:53px;border:1px dashed #574165;border-radius:5px;background:linear-gradient(transparent 49%,#756080 49%,#756080 51%,transparent 51%);font:inherit}
+.interface-17 .music-circuit .music-gate-cell .gate-block{position:relative;z-index:1;max-width:100%;min-width:34px;padding:6px 3px;white-space:normal;font-size:12px;line-height:1.3;background:#463053;border:1px solid #af82d6;border-radius:5px}
+.interface-17 .music-circuit .music-gate-cell.two-wire{border-left:1px dashed #574165}
+.interface-17 .music-circuit .two-wire:before{content:'';position:absolute;left:50%;width:2px;background:#df9acb;z-index:0}
+.interface-17 .music-circuit [data-link=top]:before{top:50%;bottom:-9px}
+.interface-17 .music-circuit [data-link=bottom]:before{top:-9px;bottom:50%}
+.interface-17 .music-circuit .selected .gate-block{background:#603654;border-color:#fc9ae0}
+.interface-17 .music-circuit .add-gate{background:#23152e;color:#d6b9ef;border-style:dashed}
+.interface-17 .music-circuit .drop-over{background:#3b2249;border:2px solid #e897d9}
+.interface-17 .music-palette-description{padding:10px;border:1px solid #634676;background:#21132d;border-radius:8px;margin-top:8px}
+.interface-17 .music-palette-description h3{font-size:14px;margin:0 0 6px;color:#edcdf8}
+.interface-17 .music-palette-description p{font-size:12px;line-height:1.6;margin:4px 0;color:#decaed}
+.interface-17 .music-gate-math code{display:block;white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;padding:8px;color:#e8c8f5}
+.interface-17 .music-gate-inspector{min-width:0}
+@container (max-width:480px){.interface-17 .music-gate-palette{grid-column:1/-1;grid-template-columns:repeat(4,minmax(0,1fr))}.interface-17 .music-circuit-workspace{grid-column:1/-1}}
+@media(max-width:1279px){.interface-17 .music-circuit-builder{grid-template-columns:1fr}.interface-17 .music-gate-palette{grid-template-columns:repeat(7,minmax(0,1fr))}}
+@media(max-width:620px){.interface-17 .music-gate-palette{grid-template-columns:repeat(4,minmax(0,1fr))}}
+/* The former pipeline-only view hid the editable grid; it is now visible. */
+.interface-17.p5-enabled #m-circuit{display:grid}
+.interface-17 #music-circuit-panel .music-lessons[hidden]+.micro-note{display:none}
+.interface-17 #music-circuit-panel>.music-circuit-intro{font-size:12px;line-height:1.6}
