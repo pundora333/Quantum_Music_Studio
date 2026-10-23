@@ -1,0 +1,106 @@
+{
+  "release": "1.0.0",
+  "date": "2026-10-05",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "qiskit": "2.5.2",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "node": "v24.19.0"
+  },
+  "tests": {
+    "originalJavaScript": {
+      "passed": 36,
+      "failed": 0,
+      "skipped": 0
+    },
+    "python": {
+      "passed": 24,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "scope": "Numerical, file decoding and DOM/mock integration checks. No QPU run, human listening study or physical audio-device test.",
+  "originalSnapshot": {
+    "commit": "2a591c50e6459ad0b7d37fa2f124bc37fed79737",
+    "files": 33,
+    "hashMismatches": []
+  },
+  "splittingConvergence": [
+    {
+      "maxStepSeconds": 0.0002,
+      "l2Error": 1.0376309172504082e-06
+    },
+    {
+      "maxStepSeconds": 0.0001,
+      "l2Error": 2.5900867454992915e-07
+    },
+    {
+      "maxStepSeconds": 5e-05,
+      "l2Error": 6.472727515008189e-08
+    }
+  ],
+  "examples": [
+    {
+      "session": "Minimal_Circuit_Session",
+      "samples": 256,
+      "referenceMaxStepSeconds": 2.5e-05,
+      "maxAbsError": {
+        "signal": 2.141652424847429e-09,
+        "lines": 2.1626967924848195e-09,
+        "pop": 7.882583474838611e-14,
+        "z": 1.5765166949677223e-13,
+        "initial": 0.0,
+        "final": 3.0320190802513025e-13
+      }
+    },
+    {
+      "session": "Hahn_Echo_Session",
+      "samples": 256,
+      "referenceMaxStepSeconds": 2.5e-05,
+      "maxAbsError": {
+        "signal": 2.7133850721838826e-13,
+        "lines": 1.3741785487297875e-13,
+        "pop": 7.605027718682322e-15,
+        "z": 1.5182299861749016e-14,
+        "initial": 0.0,
+        "final": 2.9937163859017346e-13
+      }
+    },
+    {
+      "session": "Free_FID_Both_Session",
+      "samples": 256,
+      "referenceMaxStepSeconds": 2.5e-05,
+      "maxAbsError": {
+        "signal": 1.0080825063596421e-13,
+        "lines": 5.3790305543088834e-14,
+        "pop": 1.2323475573339238e-14,
+        "z": 2.4619195571062846e-14,
+        "initial": 0.0,
+        "final": 3.0281332996651145e-13
+      }
+    }
+  ],
+  "wavFiles": [
+    {
+      "path": "examples/python_minimal/sound.wav",
+      "frames": 352800,
+      "sampleRate": 44100,
+      "duration": 8.0,
+      "peak": 0.565538499099704,
+      "rms": 0.12505276093931236,
+      "sha256": "0a40f98a649f859a3b54525ba59335e3ff5ad540bac44524cec794990ff12d9e"
+    },
+    {
+      "path": "examples/python_echo/sound.wav",
+      "frames": 352800,
+      "sampleRate": 44100,
+      "duration": 8.0,
+      "peak": 0.56572161015656,
+      "rms": 0.17140401172779376,
+      "sha256": "7a27b5ff862e5077065a62edc14e034b6def65815fada01300e868aeb95e7d29"
+    }
+  ]
+}

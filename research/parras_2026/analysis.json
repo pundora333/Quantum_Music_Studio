@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-17",
+  "source_matrix": "Parras 2026, Fig. 6.3.2, p. 48",
+  "source_summary": "Author-supplied SpinQ_Bell_state_experiments.csv, received 2026-10-19; cross-checked with Parras Fig. 6.3.3 p.49",
+  "source_matrix_experiment_id": null,
+  "raw": {
+    "eigenvalues": [
+      -0.029080557971483692,
+      0.005234256011995746,
+      0.048269714297770945,
+      0.9755765876617168
+    ],
+    "trace": 1.0,
+    "hermiticity_error": 0.0,
+    "trace_square": 0.9549527200000001,
+    "bloch": [
+      [
+        -0.076,
+        -0.0874,
+        -0.03880000000000006
+      ],
+      [
+        -0.0172,
+        0.0532,
+        -0.020399999999999974
+      ]
+    ],
+    "bloch_lengths": [
+      0.12214827055672955,
+      0.05951672033974989
+    ],
+    "transverse_abs": [
+      0.1158221049713741,
+      0.05591135841669383
+    ],
+    "mplus": [
+      [
+        -0.076,
+        -0.0874
+      ],
+      [
+        -0.0172,
+        0.0532
+      ]
+    ]
+  },
+  "psd": {
+    "eigenvalues": [
+      5.985976875162464e-17,
+      0.0050863423387510045,
+      0.04690567120704336,
+      0.9480079864542061
+    ],
+    "trace": 1.0000000000000004,
+    "hermiticity_error": 7.87650305987486e-17,
+    "trace_square": 0.9009451552507286,
+    "bloch": [
+      [
+        -0.06837676010164598,
+        -0.08350009491202331,
+        -0.03025260027162463
+      ],
+      [
+        -0.02016628516273845,
+        0.05119320530536645,
+        -0.028505213074317137
+      ]
+    ],
+    "bloch_lengths": [
+      0.11208419601134519,
+      0.0619674955046152
+    ],
+    "transverse_abs": [
+      0.10792426591047515,
+      0.05502202583240901
+    ],
+    "mplus": [
+      [
+        -0.06837676010164598,
+        -0.08350009491202331
+      ],
+      [
+        -0.02016628516273845,
+        0.05119320530536645
+      ]
+    ]
+  },
+  "transformation": "Negative eigenvalues set to zero; remaining eigenvalues divided by their sum",
+  "frobenius_change": 0.04009475173236119,
+  "raw_bell_overlap": 0.9702000000000001,
+  "raw_overlap_is_valid_fidelity": false,
+  "psd_fidelity_squared": 0.9428338677028679,
+  "psd_fidelity_root": 0.9709963273374765,
+  "psd_concurrence": 0.9016207480191366,
+  "limitations": [
+    "One rounded matrix; not 39 complete matrices",
+    "No defensible match of the matrix to a summary Experiment_ID",
+    "Raw matrix is not PSD; errors Invalid state appear in the source screenshot",
+    "PSD transformation is a sensitivity choice, not recovered measurement data",
+    "Source equations use root fidelity; Appendix Gamma p.69 squares qutip.fidelity; author confirms intended squared fidelity",
+    "Temp_Error is half the endpoint difference, not an estimated standard error",
+    "No uncertainty on matrix elements and no raw tomography files",
+    "No new hardware acquisition or human listening test"
+  ],
+  "summary_rows": 39,
+  "summary_descriptive": {
+    "Fidelity_reported": {
+      "min": 0.600503,
+      "max": 1.0,
+      "mean": 0.8683523076923076
+    },
+    "Concurrence_reported": {
+      "min": 0.035242,
+      "max": 0.965209,
+      "mean": 0.6028355128205128
+    },
+    "Entropy_reported": {
+      "min": 0.069496,
+      "max": 0.902745,
+      "mean": 0.5101887435897436
+    },
+    "Duration_sec": {
+      "min": 306.3,
+      "max": 322.5,
+      "mean": 314.65641025641025
+    },
+    "Temp_average": {
+      "min": 27.588,
+      "max": 29.557,
+      "mean": 28.22392307692308
+    }
+  },
+  "audio": {
+    "duration_seconds": 8,
+    "sample_rate": 44100,
+    "channels": [
+      "q0 left",
+      "q1 right"
+    ],
+    "gain": 0.5,
+    "carriers_hz": [
+      435,
+      652.5
+    ],
+    "physical_seconds_per_audio_second": 0.05,
+    "per_file_normalisation": false,
+    "psd_rms": 0.015962531380334877,
+    "bell_rms": 0.0,
+    "ideal_max_abs": 0.0
+  },
+  "summary_updated_on": "2026-10-19",
+  "summary_validation": "csv_validation_2026-10-19.json"
+}

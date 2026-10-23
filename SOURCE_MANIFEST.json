@@ -1,0 +1,1489 @@
+{
+  "software_version": "1.7.2",
+  "created_on": "2026-10-21",
+  "scope": "Public repository package",
+  "excludes_self": true,
+  "file_count_including_manifest": 297,
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 649,
+      "sha256": "2c342efe5a11822b59f42ad34fe7cb5e1c452e36c0a2ae8efdaee5c6b43e879b"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 141,
+      "sha256": "8a8c26a59e5994ad90d490e38911ab2d88f7ad10cc5058e50e6305a7fab36198"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 461,
+      "sha256": "7c35465ab29bf48eac3711684131a1a5dfff084a32ffce7c6def4471cbbedae7"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 898,
+      "sha256": "fefe7816e7b4fb2a899ef9193219737bc32e76ab901aebd6390372cad775e6bb"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6023,
+      "sha256": "8abe3b283596876a5f93217f714425d56dbc08322dfd22c476500224a2b22d43"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1506,
+      "sha256": "4647c8333487a206017bffb3aeac8ffc3748898f22d59a26c0ce571fc1b825db"
+    },
+    {
+      "path": "docs/AI_ASSISTANCE.md",
+      "bytes": 901,
+      "sha256": "571b480c77befc0c44ed403f0d52937da281868a12c792d5a0a154e5203fdd42"
+    },
+    {
+      "path": "docs/Python_Methods_GR.md",
+      "bytes": 9339,
+      "sha256": "d21a07e28dab0cfc95eb116691ee227823703614e388b0d7865f77c43971e9dc"
+    },
+    {
+      "path": "docs/RIGHTS_SCOPE.md",
+      "bytes": 2021,
+      "sha256": "aeec75ce10f4fa1cd2f727ce73a344206a46bc607fecab4f88f5f92c802a3dbf"
+    },
+    {
+      "path": "docs/TEST_GUIDE_GR.md",
+      "bytes": 3292,
+      "sha256": "6a3a95efe7f2d554a914585833e437f92906582b500cd6d9a13c5cf13276e53c"
+    },
+    {
+      "path": "docs/USER_GUIDE_EN.md",
+      "bytes": 3849,
+      "sha256": "2a955c92e49eba1b9cbe67fb563b40722ccd3c0709dbbf6712736750e3ec54b0"
+    },
+    {
+      "path": "examples/Calibration_Example_ms.json",
+      "bytes": 238,
+      "sha256": "5d0bfacc1866c129ddce84443682e6b2188814dfe3db8643e2f3b6cac65494ce"
+    },
+    {
+      "path": "examples/Calibration_Example_s.json",
+      "bytes": 240,
+      "sha256": "37833a8522a10fecfa649698cb4e384a5e37d13d674b7e71471a87ccf2871e96"
+    },
+    {
+      "path": "examples/Free_FID_Both_Session.json",
+      "bytes": 934,
+      "sha256": "93d88d23333b79a9715a115b96b5d04f1408d82e70a510df792bee5bb215874c"
+    },
+    {
+      "path": "examples/Hahn_Echo_Session.json",
+      "bytes": 933,
+      "sha256": "e4d809168610fefd11d849478dcf50980b2768deeb1712d11b00a2394909c073"
+    },
+    {
+      "path": "examples/Invalid_Calibration_T2.json",
+      "bytes": 239,
+      "sha256": "4017b130d47518dcb4797ebc719c370660842fc429e07ff55f10622be89d1ceb"
+    },
+    {
+      "path": "examples/Minimal_Circuit_Session.json",
+      "bytes": 854,
+      "sha256": "090b0a3e1a7f828f01f798287e919aee5415de1fba729510a8f08b541e472f80"
+    },
+    {
+      "path": "examples/Model_Linked_Tempo_Session.json",
+      "bytes": 1692,
+      "sha256": "9bfe0b6b6ada7308a991ac81b251e30dbe5579e3f4a9b7365f3546779a904506"
+    },
+    {
+      "path": "examples/Music_HZH_Clean_Session.json",
+      "bytes": 2331,
+      "sha256": "3adb0a77513435f5a48173cb6a7ce9f59784d7be6747217009160ea081e839cb"
+    },
+    {
+      "path": "examples/Music_HZH_FX_Session.json",
+      "bytes": 2318,
+      "sha256": "02a74f3cc3b4a2dabcad183dfffb67c41393c24a723956c20892a000a4227b96"
+    },
+    {
+      "path": "examples/Notes_C3_B5_A4_435Hz.csv",
+      "bytes": 1037,
+      "sha256": "ac4878288a242b4787e1c6570c62d5135246e7af15fd5a1c845cc6f9f05f8777"
+    },
+    {
+      "path": "examples/python_echo/decay.png",
+      "bytes": 141017,
+      "sha256": "3fd474b2d434f30e06dfd2afc5c59d62ed93f49a7f28642a6cfcf84097210c11"
+    },
+    {
+      "path": "examples/python_echo/fid.csv",
+      "bytes": 129612,
+      "sha256": "85a2c6070c7d1087b0ad9b61f0ef5413eeb1bcdab147ca16fba062ffc7d472c1"
+    },
+    {
+      "path": "examples/python_echo/fid.jpeg",
+      "bytes": 72979,
+      "sha256": "e788f4d914280684f08b354a538387f82b50f92b76db7b0331ed6e8672363cac"
+    },
+    {
+      "path": "examples/python_echo/fid.json",
+      "bytes": 187336,
+      "sha256": "73787256ae32c09771b9676fe046bfacd393879a6665dd1401ee8d0dcb27b1cb"
+    },
+    {
+      "path": "examples/python_echo/fid.png",
+      "bytes": 98582,
+      "sha256": "b5364121a668c3b79857febbd60ad3ae04f3d972777b4eaae330e916c84a5f39"
+    },
+    {
+      "path": "examples/python_echo/session.json",
+      "bytes": 933,
+      "sha256": "e4d809168610fefd11d849478dcf50980b2768deeb1712d11b00a2394909c073"
+    },
+    {
+      "path": "examples/python_echo/sound.mp3",
+      "bytes": 128731,
+      "sha256": "63d4e8352566ab35187392a4d7948c220379fd22f6203c04aee02955ebd8f3f3"
+    },
+    {
+      "path": "examples/python_echo/sound.wav",
+      "bytes": 1411244,
+      "sha256": "7a27b5ff862e5077065a62edc14e034b6def65815fada01300e868aeb95e7d29"
+    },
+    {
+      "path": "examples/python_echo/spectrum.png",
+      "bytes": 58661,
+      "sha256": "8923c67dc1af9a159721e28c04ecd8b587c179efe5928ca9284bb75bb30f3979"
+    },
+    {
+      "path": "examples/python_minimal/decay.png",
+      "bytes": 101135,
+      "sha256": "a15d832d69e7b4c172c57136f6f36b45a2d0eed9edc6abcce6568ee7103eeece"
+    },
+    {
+      "path": "examples/python_minimal/fid.csv",
+      "bytes": 138177,
+      "sha256": "e9e3948ae82ad0c96e3ec7a2bb3b24087ca93b82f2c722e3310c5ac133fbebb5"
+    },
+    {
+      "path": "examples/python_minimal/fid.jpeg",
+      "bytes": 70256,
+      "sha256": "fc41c93307381e2b5dda7256d80d460b966038ae0333773567448fff17eda127"
+    },
+    {
+      "path": "examples/python_minimal/fid.json",
+      "bytes": 195998,
+      "sha256": "cf773a0f2df701d4cda3ca2b8c317578bc8229384d4dd0767dc6c77addb45c35"
+    },
+    {
+      "path": "examples/python_minimal/fid.png",
+      "bytes": 84756,
+      "sha256": "690493a6430d3ff79b64d3dd7f60180af9caf7bfde2bed488cfaf895121e4dd3"
+    },
+    {
+      "path": "examples/python_minimal/session.json",
+      "bytes": 854,
+      "sha256": "090b0a3e1a7f828f01f798287e919aee5415de1fba729510a8f08b541e472f80"
+    },
+    {
+      "path": "examples/python_minimal/sound.mp3",
+      "bytes": 128731,
+      "sha256": "f2620831138fe5397dec50c6b715954113a139a2eb5044a5cda20d3fdcd1bee1"
+    },
+    {
+      "path": "examples/python_minimal/sound.wav",
+      "bytes": 1411244,
+      "sha256": "0a40f98a649f859a3b54525ba59335e3ff5ad540bac44524cec794990ff12d9e"
+    },
+    {
+      "path": "examples/python_minimal/spectrum.png",
+      "bytes": 62918,
+      "sha256": "9eef06721374fdad3c288ac51173856205b8a47aced58f4c6eaefd313e9f3dc4"
+    },
+    {
+      "path": "licenses/GPL-3.0.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "licenses/LGPL-3.0.txt",
+      "bytes": 7652,
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    {
+      "path": "licenses/UNIFRAKTUR-LICENSE.txt",
+      "bytes": 4535,
+      "sha256": "5188ea5703a25a2fee0f17586c473b3cf6018810146b021ce4bb7a2eb6499802"
+    },
+    {
+      "path": "python/quantum_studio/__init__.py",
+      "bytes": 169,
+      "sha256": "f6056dcedbf1644c0e8ae1de41313d2f21351660fd859b8c121ce0c44a74bfb1"
+    },
+    {
+      "path": "python/quantum_studio/__main__.py",
+      "bytes": 1772,
+      "sha256": "6cd83928618d3e5e48b93b31d565e5908470efb181464b7a678a51589c72a292"
+    },
+    {
+      "path": "python/quantum_studio/audio.py",
+      "bytes": 5055,
+      "sha256": "9096c62a9f5733c3cde453cfb9493773abfcd13fd0ade8cc5dc44e7b359ff19f"
+    },
+    {
+      "path": "python/quantum_studio/config.py",
+      "bytes": 6409,
+      "sha256": "cbf9c43b808df080acef2a8aa224315012a37d2db86c76da6fa02431f25b7284"
+    },
+    {
+      "path": "python/quantum_studio/density_input.py",
+      "bytes": 1567,
+      "sha256": "65869947147b2328d6fd50cdb8256a92a96a9d8d1c9573041120ff0fb36031a9"
+    },
+    {
+      "path": "python/quantum_studio/export.py",
+      "bytes": 4083,
+      "sha256": "509e3c4882133d702da4808950a229e465588eeb206fa83a1184e635a2585b2b"
+    },
+    {
+      "path": "python/quantum_studio/frontend.py",
+      "bytes": 7628,
+      "sha256": "c6b116b17632a51999b74500cd3dcd36ea35c22eda4cc8118ba3bccc09e52c2e"
+    },
+    {
+      "path": "python/quantum_studio/model.py",
+      "bytes": 8888,
+      "sha256": "1ee8faa18defd72c0422422f153aa1edca1713845220692da3bf1320121f3dd7"
+    },
+    {
+      "path": "python/quantum_studio/music.py",
+      "bytes": 3265,
+      "sha256": "a66fa8c6b74bbae0440a389ae37835d36ca65bf436904e2fbed2b3575bb1883f"
+    },
+    {
+      "path": "python/quantum_studio/server.py",
+      "bytes": 4395,
+      "sha256": "5f2524b6fba3977ce08ede9530e2a215d6b2e2dbc741e332b1824847c9d1aa7b"
+    },
+    {
+      "path": "python/quantum_studio/tempo.py",
+      "bytes": 2252,
+      "sha256": "3922a84ebfe25a13a3da196273b14db3a8a7982444446d95b42de80576569733"
+    },
+    {
+      "path": "python/tests/conftest.py",
+      "bytes": 96,
+      "sha256": "69a53b2cec0798614f29d4a59734838b11dffdac7ef2750c6c78166ca64c9492"
+    },
+    {
+      "path": "python/tests/test_audio_server.py",
+      "bytes": 4564,
+      "sha256": "602e1431ecc7d0eba1ac0065bd73fba450e3c53877ccc9c8b0fa1924d3a9595f"
+    },
+    {
+      "path": "python/tests/test_density_input.py",
+      "bytes": 2425,
+      "sha256": "016ef447a51efcec5714d237e7aee766179a441fdf9ccfd011eb9f317c001aaa"
+    },
+    {
+      "path": "python/tests/test_music_circuit.py",
+      "bytes": 2343,
+      "sha256": "65c3786671148650f18584e21d4c14d6c5cb079817ffb5cf1901ebbe755c3680"
+    },
+    {
+      "path": "python/tests/test_physics.py",
+      "bytes": 5942,
+      "sha256": "5a8ae7ab8a8524aecb160abac3946e687b1c9da3a73e845d6c8930482880003a"
+    },
+    {
+      "path": "python/tests/test_tempo.py",
+      "bytes": 2423,
+      "sha256": "30457ec8e721ffae4d2e07dc0ebfedca08bf81cbd7e45074f060f0b093fc362f"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "bytes": 34,
+      "sha256": "1438527233ce7beb1cdf4a046b8b5d38f140bd77217ef4df17d5592989d3ec15"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "bytes": 367,
+      "sha256": "98379fca7eec35b0e5baade86ac7f7177628265dd60db0945e2a9974a7dcbb47"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 75,
+      "sha256": "1085fce6370ff2f33d0b8ba02c040b61d9b0d24eb8d0a4316b1a838d186a8b3e"
+    },
+    {
+      "path": "research/README.md",
+      "bytes": 953,
+      "sha256": "f3c99f9f3d75a08e1b1ad2a740ebe36b61fa0ed3209c42bfaff0aac9207605c3"
+    },
+    {
+      "path": "research/analyse_parras.py",
+      "bytes": 9360,
+      "sha256": "1f97e985d3f286eb99877c293f06125907008d8a7026384c96315a1537a93795"
+    },
+    {
+      "path": "research/circuit_2026-10-21/javascript-tests.log",
+      "bytes": 9476,
+      "sha256": "ee0d66a3de58b03b1bbe24dc2155bf3c81a34df9f415b768f2690c2ae3d2f299"
+    },
+    {
+      "path": "research/circuit_2026-10-21/python-tests.log",
+      "bytes": 99,
+      "sha256": "6e6cb19f83850768809f27ec51207145334f6990f501b0417950b2c7c8b9400b"
+    },
+    {
+      "path": "research/circuit_2026-10-21/verification.json",
+      "bytes": 673,
+      "sha256": "405838b9b544114b0d0a30914f0aa147cde336345ef69feb9cbf234011854c80"
+    },
+    {
+      "path": "research/package_verification.json",
+      "bytes": 1020,
+      "sha256": "399eb77c5752880331d1b90a01b5b0b861acd1ff6a1447028c67a999e4e343c3"
+    },
+    {
+      "path": "research/parras_2026/README.md",
+      "bytes": 3793,
+      "sha256": "51e22a78f1c8c0bcfa5f1b8cd1c1d51d96fdc5e6cc5bc3a0ce2866c036477559"
+    },
+    {
+      "path": "research/parras_2026/SpinQ_Bell_state_experiments.csv",
+      "bytes": 3696,
+      "sha256": "89ab1dfc0eb85d4958f6fe990663d4a0b4faaea16a3129e5316d6c8cbd3fdd8d"
+    },
+    {
+      "path": "research/parras_2026/analysis.json",
+      "bytes": 3865,
+      "sha256": "982c140e674ef9682801e538d3ba4ff861a8b2abcc4d748f688436e92ad92235"
+    },
+    {
+      "path": "research/parras_2026/comparison.png",
+      "bytes": 318217,
+      "sha256": "fc0b43ca7f4bd37787e9cb0fa32cfb7c114c826e0bd2da40b12b474e07308dd3"
+    },
+    {
+      "path": "research/parras_2026/csv_validation_2026-10-19.json",
+      "bytes": 3184,
+      "sha256": "234ab00f44728ff4122e86db9c9b25e9cf5fc5eeef6a99cd68b2d5ea68878073"
+    },
+    {
+      "path": "research/parras_2026/evolution_configuration.json",
+      "bytes": 809,
+      "sha256": "986e02fbdb2f3be7aa425e2116dedbd143ae1976517059dccb70ef80ada67830"
+    },
+    {
+      "path": "research/parras_2026/fid_comparison.csv",
+      "bytes": 118913,
+      "sha256": "56bb92de8c12cbd91b60e7ff3a170ac401634cb058c8f49baef0dee83b0e55bf"
+    },
+    {
+      "path": "research/parras_2026/ideal_bell_simulated.wav",
+      "bytes": 1411244,
+      "sha256": "1918846628d4d25823f9b32c75503e1167c680c3cc0821dd950d41b9c8fdd0c7"
+    },
+    {
+      "path": "research/parras_2026/parras_psd_simulated.wav",
+      "bytes": 1411244,
+      "sha256": "f06a6630cc6bcdeb298555d34c4265876be6ce9f11853c6bfd35db3c7b88aa38"
+    },
+    {
+      "path": "research/parras_2026/provenance.json",
+      "bytes": 1408,
+      "sha256": "2bee065ac43d83d0a90a350eb8bccbf3651780fe2dd095d5e975eb0d9d94eb98"
+    },
+    {
+      "path": "research/parras_2026/rho_psd.csv",
+      "bytes": 785,
+      "sha256": "95ca5719352a98d3836d4195c0b3dbb5ab03724610efa93049fdf41a19a59681"
+    },
+    {
+      "path": "research/parras_2026/rho_raw.csv",
+      "bytes": 356,
+      "sha256": "c841cb2e9d86efb5c071cf82e0de5a8647f16c649955f1b9480db6f6f25ce821"
+    },
+    {
+      "path": "research/parras_2026/summary_39.csv",
+      "bytes": 3371,
+      "sha256": "cff779b5b5fca980ca7b464684fa4b68b54db043674e5d7cbccbe0a1fc2fa60a"
+    },
+    {
+      "path": "research/python-dom.mjs",
+      "bytes": 5547,
+      "sha256": "9d6aa295cb9418ad009ef730763fca1abb0d03221819a8fe1c2e827b9a0de8bc"
+    },
+    {
+      "path": "research/reference.mjs",
+      "bytes": 1432,
+      "sha256": "83976e639bad4e58070e7fef1c0c9990347c34f5b7fe9b4b0cd6e57ce79cbb20"
+    },
+    {
+      "path": "research/test_parras_analysis.py",
+      "bytes": 2629,
+      "sha256": "fd8b2487b2a6e95eacd2b60625d9c78a0f8bc7d8e10106ebb322a47a84a5b089"
+    },
+    {
+      "path": "research/validation_report.json",
+      "bytes": 2739,
+      "sha256": "d4a6148cfb2a9203c2b20320dd08e27a35bb544d9ef4e19e9b1f86574b822532"
+    },
+    {
+      "path": "run_studio.py",
+      "bytes": 305,
+      "sha256": "ab9d73e10641e6fabaad674e6239bf024cdada3ba8af11c33801fbc1a95f6272"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/LICENSE",
+      "bytes": 424,
+      "sha256": "cd144ca132e3842b01f5ed2d6f3a32141e24a1cc15e115aa5f19a2294ce0a379"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/README.md",
+      "bytes": 3259,
+      "sha256": "e798f17c0359bb14330b92f0c4a775e2c12b01887598da092a406dc130834826"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/bower.json",
+      "bytes": 406,
+      "sha256": "0369b9453a336c14d4512f8e51329c7570b79b2e3c5ebb432d5f8905559095db"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/doc/1000px-Mp3filestructure.svg.png",
+      "bytes": 39078,
+      "sha256": "8def12d205f5cb65ea9c07f0675eb8fece342c047503fe265171c8ee649cb34c"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/example.html",
+      "bytes": 1840,
+      "sha256": "30e91598c695c5a3bf1c17b1b1eeaaff0988e58e4a274f21c6d078193b5fe0fd"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/lame.all.js",
+      "bytes": 530087,
+      "sha256": "026bd88846040f357a937cd85821a48492a362eff0812cda734f23fca55fea3b"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/lame.min.js",
+      "bytes": 156043,
+      "sha256": "15d285e2587b3bdbfd18a68de6ce07cc074f7480a82c3815da2dc1c348ec6df4"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/makeall.sh",
+      "bytes": 620,
+      "sha256": "16beb540e54d14ef497e2ff82b15d702f6f5b70eff3e05443faa807fe6ed0e16"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/minify.sh",
+      "bytes": 115,
+      "sha256": "87e2a810d520cd0e4958c4e01cf07c4b4585d47fa260983bd9dd27009a51d3da"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/package.json",
+      "bytes": 639,
+      "sha256": "03abb3895269950562d33ba35fa8c9f62b9c35f64830596299c301e58c244c8e"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/pom.xml",
+      "bytes": 1963,
+      "sha256": "69d34abaa71fc5e44e287e02579b139844ee0ceb1851111aa1dfb49bd032e49e"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/ATH.js",
+      "bytes": 1962,
+      "sha256": "50f6b2d2ec21e054c252741db34bd6fd2ad2260dba758a5eabbe9e777f77c84c"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/BitStream.js",
+      "bytes": 36047,
+      "sha256": "e76d69aa890fa4177cf94a72b3a505c7f999619b81d7b12c4fa8b9c8f38096c3"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/CBRNewIterationLoop.js",
+      "bytes": 2798,
+      "sha256": "4f0067848fdfc2c506963e89a1b8d59b9ed13b86655805bf7a8f252e3845d4dd"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/CalcNoiseData.js",
+      "bytes": 340,
+      "sha256": "31ec9be306ccb77b798b9337add6e3a465778e1bb8c233e9dd35fef829547172"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/CalcNoiseResult.js",
+      "bytes": 501,
+      "sha256": "7ba0d2dd332a396e1256ebfd9816f2c8b51ba4788eac7828d28e4d31d8f52d0b"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/Encoder.js",
+      "bytes": 22317,
+      "sha256": "f8049ed7faf642f91b886cc8fdc53bf536610c2cd3fef1b2150bae032367582d"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/FFT.js",
+      "bytes": 8954,
+      "sha256": "a18c0fcfa9f08965c9ea6e8a66a59e2776894479b4d918892470e39c8a9ed98e"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/GainAnalysis.js",
+      "bytes": 22855,
+      "sha256": "5b9fd57bb43f96d01a8df7965db72d355c84d5be817e96fad0bd1d33ad2d4751"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/GrInfo.js",
+      "bytes": 3549,
+      "sha256": "0c08e2c3c8bcc3f2fc445f36be73b956d859a730fa2fd416b68830485f56d8dc"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/ID3TagSpec.js",
+      "bytes": 526,
+      "sha256": "82280619a7e23358a21aab6eb736b7c5b204072e1c97ce95c0e59d3bd12619bb"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/IIISideInfo.js",
+      "bytes": 916,
+      "sha256": "7bc4f6778686cdcbe5e1a919091187c1a2b2809ec33f728353c121e0ee236fc5"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/III_psy_ratio.js",
+      "bytes": 191,
+      "sha256": "d8f28670572446834bbfe0ef7ac82379e34de29bba4d3e5e9076cb952e2b5cdb"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/III_psy_xmin.js",
+      "bytes": 984,
+      "sha256": "b271ac6b5bb6b11d7929c0ee860d0117936c31c287c05f488637f3e2ad09d864"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/L3Side.js",
+      "bytes": 201,
+      "sha256": "c0c9e49e1f77051735aa88de7ab9518da07b5810db7bdb5a751918f2f3d9d056"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/Lame.js",
+      "bytes": 64321,
+      "sha256": "76138a513c6b2cab9469713e34c95e1fbf73ac475dc4a55e3850f031b2b120c7"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/LameGlobalFlags.js",
+      "bytes": 6188,
+      "sha256": "9097dc805b61f1c0ab9bebcc980e8d99197e35dd5ec7b4cd41a5c8a00855874e"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/LameInternalFlags.js",
+      "bytes": 10939,
+      "sha256": "d85208b9ea59d76b55e50493648abc88c8eaefee9f6e6ce7e434f8e6601000d8"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/MPEGMode.js",
+      "bytes": 371,
+      "sha256": "5bb9ed26943770dc5effc59a2e2e151ed7d400e192e10502cc49f770a841f85a"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/MeanBits.js",
+      "bytes": 86,
+      "sha256": "bf6489a8126feee8b86e8da023412dbad0e9010695caa4ca0757839e868ad96c"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/NewMDCT.js",
+      "bytes": 36081,
+      "sha256": "a581e57af22c3f441ccfad924507abe7822f68119e1f5c916d2875126ef855a2"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/NsPsy.js",
+      "bytes": 958,
+      "sha256": "7997c3726894f0603e4dce225cacaa39da7491bdf9c59fe5234060c10ff19bf6"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/Presets.js",
+      "bytes": 19538,
+      "sha256": "09f548f65bca87a8b0369941dc5dcae076381f933db82e576a9dcb017d3876d7"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/PsyModel.js",
+      "bytes": 107510,
+      "sha256": "08944ed7e984d813522cb1915335a16ae0cb18279a4c306539e682327039eaf0"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/Quantize.js",
+      "bytes": 53295,
+      "sha256": "f22ca4e8eb7a9634a45f47d5611b433defdf2e776a05e4feb1a2d3e0b0ad9c62"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/QuantizePVT.js",
+      "bytes": 36897,
+      "sha256": "7ab6c122bb8e53ffed71b134fa472a6dad3a28aa99717fede02c140767828988"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/ReplayGain.js",
+      "bytes": 1845,
+      "sha256": "1ef546a7852d6bd26fff8c4e97c20ac61c2bebcba7d5ea23ceef39406a2d341b"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/Reservoir.js",
+      "bytes": 10006,
+      "sha256": "5a7e345cfb39d58206e1aa66ace80e3d37fafe935b653458ba38b7821cbd2da1"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/ScaleFac.js",
+      "bytes": 1579,
+      "sha256": "edcaed8ddc77687f5e815aeaf85ac4fb16d6464e7fa1cb5bde0d0a4a16734ebd"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/Tables.js",
+      "bytes": 20193,
+      "sha256": "c8b6ec015fd5da2caa3847dcd798225e3296ea7ba9f7250e9b87469efa85c62c"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/Takehiro.js",
+      "bytes": 38219,
+      "sha256": "ff094f3b59bda41c5f1ed1bda43e1ea6ad7dbf022c8bb928232bdf4e997c7f7c"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/Tests.js",
+      "bytes": 2929,
+      "sha256": "ff9bc8b06d77f5d9d1c9caa27df1303449acf3b614d1afff67eb04411e3620c4"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/VBRQuantize.js",
+      "bytes": 195,
+      "sha256": "14028068d442dd96a27d9e89b3acf00f37e7c40c1f131e2233db04011cf18a03"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/VBRSeekInfo.js",
+      "bytes": 620,
+      "sha256": "93e10e403e3645433d59d010c49f17851e86a535fe7c98772b5d229f9e8f0368"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/VBRTag.js",
+      "bytes": 31454,
+      "sha256": "010760d03584aa20ad71773523e3d984eec0265e47b5c699e8678ce7f17acd6b"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/Version.js",
+      "bytes": 2200,
+      "sha256": "e1b18eb4b142a30bb6f507d532df8c8460a2853d7dddd480866a7dc115b7376c"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/common.js",
+      "bytes": 3529,
+      "sha256": "ad413546f619c1e95b0f5aa43b6f27a35fb7a3342908b81b5a5b53082c9443c5"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/js/index.js",
+      "bytes": 5270,
+      "sha256": "7f8827c26e0ac4698f61e17b8226e90cd35a32038ff6b177d38846cc161aada9"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/assembly/bundle.xml",
+      "bytes": 1216,
+      "sha256": "772f51dfff22b7aee17897d1d81f508ce5233fe08ce35ff096eb77e88f53fff1"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/COPYING",
+      "bytes": 25284,
+      "sha256": "bfe4a52dc4645385f356a8e83cc54216a293e3b6f1cb4f79f5fc0277abf937fd"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/LICENSE",
+      "bytes": 402,
+      "sha256": "f82dd287e599529b6340ab35c47b69c365eae279b450d906758e58289bb5ae27"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/README",
+      "bytes": 195,
+      "sha256": "221a84768e3e9c00e71257e7d1f5932be4d4b7cb285c9163ac6126dcadb1aa52"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/USAGE",
+      "bytes": 25502,
+      "sha256": "ca92945fe9c2469d334a09cae2048b4499994857317e3ff63cc0aec7a7e0e50e"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/lowlevel/LameDecoder.java",
+      "bytes": 4486,
+      "sha256": "461bc6d11c357b167b64ed1eb70250f7502eb41125de458992dd3b1bbe8bbdfa"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/lowlevel/LameEncoder.java",
+      "bytes": 21641,
+      "sha256": "dfd0563cc2cc6d38d84a5d730be0ab94098f1e7c7ee57feeb83fc7a878dc1197"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/ABRIterationLoop.java",
+      "bytes": 2826,
+      "sha256": "d42d26b512af774d38845ea4da5df8103d4c293bc65146513aa9ce4bd8cb4bdb"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/ABRPresets.java",
+      "bytes": 882,
+      "sha256": "632f6690db1944f8781aa7aa77b14b58abd7fdf636322a772460c794bc2ff8fe"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/ATH.java",
+      "bytes": 1331,
+      "sha256": "2fb6b4d1b59d5e1a92f870f901126394fba017b7aa323760c59eed22875e8570"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/BRHist.java",
+      "bytes": 1288,
+      "sha256": "874bdaecc8b3f5bac80cf10efaadd1133039e7ee0d5a9e31e4415bf2bf77829a"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/BitStream.java",
+      "bytes": 30221,
+      "sha256": "0577a38a7c1aeacd87bf6c16db252815db4cd539eadab1bdba9e31eabf36c8c7"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/CBRNewIterationLoop.java",
+      "bytes": 2561,
+      "sha256": "a60d7c522987e950ae7362e428208db8bbc7b0133d360e75ee8543d8c5af8ebd"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/CalcNoiseData.java",
+      "bytes": 246,
+      "sha256": "32452d9f13ff94467abb5d0f5b78eb8f3652a59d6c3b1a2b53cff394ef0ecc10"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/CalcNoiseResult.java",
+      "bytes": 399,
+      "sha256": "a7ca1f9230d65b835c06f446929076234279809a73fbecfb8b9b8851f34865cb"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/Enc.java",
+      "bytes": 99,
+      "sha256": "c2472b0852fa623f9c05a4fc3006c8ab1e97ea17307125567b59ebddce709387"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/Encoder.java",
+      "bytes": 20202,
+      "sha256": "ef4286cf3406bc8791d775523cc5cb9729f5e5df025827bf48fe279d3b463b53"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/FFT.java",
+      "bytes": 9228,
+      "sha256": "e33de101123fd6db016667245300786b16495a35f311b374309ea7bf6b26ddc2"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/FrameDataNode.java",
+      "bytes": 224,
+      "sha256": "deb8f4bd9fa5056715307d0766c871146d67c9e04b6b11294560d6a5a982cb76"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/GainAnalysis.java",
+      "bytes": 20009,
+      "sha256": "24f454126dab8c8719ebc530aa1e11cb0b07d3d59a9f5496886a0bb95c0d2bb6"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/GenreListHandler.java",
+      "bytes": 103,
+      "sha256": "bcc373428c1c3b928a4c89785aac31333bed85a007416f5f7bb47f6e486e1e2f"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/GetAudio.java",
+      "bytes": 37464,
+      "sha256": "997207574679e2558eb32d07619f5511527ba618f850658be435f8e13e0df0e0"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/GrInfo.java",
+      "bytes": 2021,
+      "sha256": "657f16a56ddeac97b32a8647f1c73599575efafce97b01bdb187adf24aa97a09"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/HuffCodeTab.java",
+      "bytes": 453,
+      "sha256": "6eb426f94911494c72425b1dabd3a1254bc7ce73868b9bd88486be48ab5d9472"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/ID3Tag.java",
+      "bytes": 37219,
+      "sha256": "61d55e8c4a387413b31cd4a8e6da82beec8555e0fd74ed3302aa2ed5f865ecec"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/ID3TagSpec.java",
+      "bytes": 438,
+      "sha256": "9ef9939b53121a9534c6a0c95e3458a9edc0527ccc2f094a895c2eeb9dfa9fde"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/IIISideInfo.java",
+      "bytes": 347,
+      "sha256": "7a7b4fb377e83d426b24b6dd16a90ec4b99d9ba921a71ab95a110a6bbe1f2e54"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/III_psy_ratio.java",
+      "bytes": 134,
+      "sha256": "4d3e6f1018ef776e705877e9cef4246859783fcd4c5ed448995959fe54d351da"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/III_psy_xmin.java",
+      "bytes": 389,
+      "sha256": "e3454a33129d20d34f94b7fabe8c7fe57f0a0d7e926abeb7a8692c8e21f97edf"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/IIterationLoop.java",
+      "bytes": 227,
+      "sha256": "bd62b103213cdfff8691f76a704512dea6c76b9da2a863dd80a1ba0d48e98d1c"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/Inf.java",
+      "bytes": 120,
+      "sha256": "43a4306c53121938856004870f96de3e3f8ab4bb7872706a7d66c10f3d4777be"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/L3Side.java",
+      "bytes": 1019,
+      "sha256": "e5e4bb44b4c4a82fb03eff1dc06933530fc36ec931eb8ea36b85491fed0b13e7"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/Lame.java",
+      "bytes": 69919,
+      "sha256": "7aad49c2d00d4f4d4c9517d3558d4d9e9e041452413f1becb3b70af2ae16ebc2"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/LameGlobalFlags.java",
+      "bytes": 6061,
+      "sha256": "52cb1402128b9156d7e2e1b023ab7a106e8c7ef92963ac1b588c37dfe738d7c8"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/LameInternalFlags.java",
+      "bytes": 9143,
+      "sha256": "7f98680e41ebda1001e3b80852d996d8b7aff0dc4d203b28afc76d2530964cf8"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/LameTest.java",
+      "bytes": 6335,
+      "sha256": "efe7223bca06aafc98e8a42c174de5aea4e6689c95853787783a949808c08f48"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/LongBlockConstrain.java",
+      "bytes": 3879,
+      "sha256": "19de0f22f16e36fdd2b54cb1b9b8da4170dea6dbcf48d94932ad1eb904135c51"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/MP3Data.java",
+      "bytes": 840,
+      "sha256": "86dcbcf3556db4b2c98eb0c87a522e986ecd447da0e93e58e546014a1db6a5e5"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/MPEGMode.java",
+      "bytes": 160,
+      "sha256": "fc1cbbfaea0da596fb9bf6a33ac7a5a14fe493eee3ed42a26745ac594e57f117"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/Main.java",
+      "bytes": 28813,
+      "sha256": "0f3d5951bebfee875abc30d9c02a312a3148b41a15f39a61b1fca5daa5693d47"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/MeanBits.java",
+      "bytes": 120,
+      "sha256": "4ed0d2a81d1dedf4450f154e8eb0d40d7f4c32e5eb3ab05d1d05b44a6b718c8b"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/NewMDCT.java",
+      "bytes": 38016,
+      "sha256": "d29ad910650ad7e055894b0a827e1a16a78296f41b01ba6535f8b25108a7853a"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/NsPsy.java",
+      "bytes": 407,
+      "sha256": "8f01c4b5e7b3b2d7deda820a5be5ef3bbf41aee91c02c0bb80f468117154801d"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/PSY.java",
+      "bytes": 454,
+      "sha256": "4d225c0f2c887e6743f890bf9ed26db090f8284a879327379023270d5f7d08f7"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/Parse.java",
+      "bytes": 62420,
+      "sha256": "76f0d7c93649234e7f0c77f7c912b9358bb5d9018ffb7a8f96645e33c7becb20"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/PlottingData.java",
+      "bytes": 3353,
+      "sha256": "6cffebbbdd6524b1b183a888fbef67cb3ec0c599807fd6fe124dde68132ccaf0"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/Presets.java",
+      "bytes": 18154,
+      "sha256": "ffb28468af3f58178616ebd9ce515a1be9bfcae7ae1536ec2fde6a77274f1c70"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/PsyModel.java",
+      "bytes": 92248,
+      "sha256": "d741614ae47d8341dfab1928c95afebad8192d2a44827b2e2e135eefeed12869"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/Quantize.java",
+      "bytes": 44515,
+      "sha256": "b89bd5ca3183beccebf7eae4ed256c3554c1688487ce855cefbbb5d913234f32"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/QuantizePVT.java",
+      "bytes": 31808,
+      "sha256": "af144cf9ef093e4ce3d082f066d3b0c7f7601263eb5a21ba6225ef603d408f84"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/ReplayGain.java",
+      "bytes": 1206,
+      "sha256": "d6191c856bbb803560a831ea315ce9597a2a31f03fec4c438425609f1b602ddd"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/Reservoir.java",
+      "bytes": 10472,
+      "sha256": "d4dfb409019403e603a67cd40cbc9ec1e6b87f7052ffab87f688a64c12ba546a"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/ScaleFac.java",
+      "bytes": 734,
+      "sha256": "0979ce42f741d9045329b031b7958ae090bf423df0200b4127c079bf6cfac29c"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/ShortBlock.java",
+      "bytes": 415,
+      "sha256": "4a12328c9653a2977f44731bbce4a7af627015d1ecdc6f954ff519278c615141"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/ShortBlockConstrain.java",
+      "bytes": 2230,
+      "sha256": "202ba6e63253880315a16bcbe79e4ea7cf3c9de516af5fe4c414f87b4091a643"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/Tables.java",
+      "bytes": 21156,
+      "sha256": "2db1e0118d681e931227258452b19d8c8eb3ea1dd60cbdefcc84027663309e5d"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/Takehiro.java",
+      "bytes": 31666,
+      "sha256": "65267ec055f2286ebe2af0a53fdba34397891a15217e9006e664d330a30a4e89"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/Util.java",
+      "bytes": 1209,
+      "sha256": "45f5e48ca8bfa879887aa3925bfe2f145f673723558e557609fc5f33c610394b"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/VBRNewIterationLoop.java",
+      "bytes": 2777,
+      "sha256": "74320703b8305969dbfccf690f4b7162c146d973fecd971526731cc1fd14feb4"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/VBROldIterationLoop.java",
+      "bytes": 3355,
+      "sha256": "b644b21df4d63c3a0fb0ce862156cbffa0dfc14dba9b36107ad29bd6c1bd342c"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/VBRPresets.java",
+      "bytes": 988,
+      "sha256": "430e7edad56ba1943ce789c2a6c750ec179c522729d3bf011fc8ce5fd597447c"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/VBRQuantize.java",
+      "bytes": 31636,
+      "sha256": "a45bde66f0db2c69d7e021f3209246047acd84cdcc04d1e0d81cbdcfdd673230"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/VBRSeekInfo.java",
+      "bytes": 489,
+      "sha256": "c6ef5c6d86d3931f3efc691bde7af1c3b4b314c6875e3069e73668cc90bcbdc4"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/VBRTag.java",
+      "bytes": 29125,
+      "sha256": "1ceca0a8aa46e9958ef485c78d5336579d3eadf106929f54c8027e2c8acdeb31"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/VBRTagData.java",
+      "bytes": 927,
+      "sha256": "73bcba99433e4762fde3b968ece6728f8c21491ae0fd121e45a6aaee25035106"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/VbrMode.java",
+      "bytes": 142,
+      "sha256": "3c9776794037a60d686abc7910a3edafad7f60001cde188b8518c1f9837b3d4c"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mp3/Version.java",
+      "bytes": 2174,
+      "sha256": "dbb3592ec1d9f7d870a100f2bc5a27d76b5feca201446b56a8919ed08868325c"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mpg/Common.java",
+      "bytes": 7732,
+      "sha256": "fda9c7ccd2494eebdd37d63b013ee45b85c20aded75a71aaddce55d7ef9e3844"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mpg/DCT64.java",
+      "bytes": 14611,
+      "sha256": "5bba70fb383aa252bbd96d49979a43be729c4e15ec345e0df8565ca950393ca5"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mpg/Decode.java",
+      "bytes": 10445,
+      "sha256": "29723d4c20c8a94e5c5ecfd422756538798c3ddac7ff86291ef95001f16df09e"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mpg/Frame.java",
+      "bytes": 888,
+      "sha256": "563d07d26b4ed7aa68b7d326aeb27d186f6b16fc8d6619f325a938d1c86903a1"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mpg/Huffman.java",
+      "bytes": 16088,
+      "sha256": "cb0b3d995045b1a52c2d02d9cbdcc24da6536298b8e4b80eb3fc16233900c028"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mpg/Interface.java",
+      "bytes": 21244,
+      "sha256": "d9416df82e44bdc3f39d69ec3abbc7e8d09504151bd65f0ecdecf0ddb1538d88"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mpg/L2Tables.java",
+      "bytes": 24539,
+      "sha256": "eff66284919409aff720d4dd7cbf3793c594ef9b889295e4e896c8ecfb40d4df"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mpg/Layer1.java",
+      "bytes": 6628,
+      "sha256": "6b443dc63e4ea7ccc7f1c67629f25cd77ee98bff921d2c574705f02bc961892b"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mpg/Layer2.java",
+      "bytes": 12749,
+      "sha256": "bdce54d295dd622ae6f6abcbdcc872fb01f7ef83807cfbbf725fed726ac0e4c5"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mpg/Layer3.java",
+      "bytes": 71047,
+      "sha256": "81f3c43cb328e38f3b00521aa7b726f34262920d250e1ae7e5d1ab4add28f689"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mpg/MPG123.java",
+      "bytes": 1618,
+      "sha256": "611b43a62553d07618b15839e42e94d6a61dbe0e4b0eab7940db8ebee2b148f0"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mpg/MPGLib.java",
+      "bytes": 12912,
+      "sha256": "8cfb4cd00c2be0e8106478697b27dd3e63511ae4fbec3b8af08bf8d6ae9c02b4"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/mpg/TabInit.java",
+      "bytes": 6205,
+      "sha256": "22036ef4910580a576fb7b59eb9fc3f44daf76ef1ca48cbd0eea0f4243139c50"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/ui/InputTableModel.java",
+      "bytes": 1437,
+      "sha256": "0783a0441b1f270a50bc5c99d37c798337220263075794220b14382b02770768"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/ui/LameUI.java",
+      "bytes": 12269,
+      "sha256": "b6b8ecd084dbfaa5414295022bac4d05cd13c8f7e94c7990d31f90413d929044"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/java/ui/Picture.java",
+      "bytes": 1509,
+      "sha256": "118211ef6f61003aa6a465819d45eda37a864232b674f604184012aec0b99bc0"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/resources/LameUI.xml",
+      "bytes": 5139,
+      "sha256": "15a10a38b3c30df36ae4689cb280b29c11828e7eada473aade8d50bd51cd621b"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/resources/picture.png",
+      "bytes": 30667,
+      "sha256": "959991d46e1f930ac603663fc80f69a3cd579879bb74bf852594b4f5c6656d3d"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/resources/run.bat",
+      "bytes": 33,
+      "sha256": "d5a28cb1c7375bbdefe8d96f3e77af4d8d4c4cd037ac1c9b113b6a689b3eda82"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/src/main/resources/run.sh",
+      "bytes": 44,
+      "sha256": "367baa692e91b379e5c3e547fac4f18296f1f8e90904ba1878a1856feaf9404e"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/testdata/Left.wav",
+      "bytes": 720044,
+      "sha256": "c7bea2b910c1652ad42d7c8caaf2976a1b48e988a02b27e844e4a17a0d9a1cf1"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/testdata/Left44100.wav",
+      "bytes": 661578,
+      "sha256": "85a67db9c14e0ba0f53f4c9139fc4ac2df462a77c7caeca8c8c26bf9e1f70eb0"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/testdata/Right.wav",
+      "bytes": 720044,
+      "sha256": "fb794f0e9e23fbab8303856b5efb3ed1d823d1c3f1761119e0cffb75fd2dde56"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/testdata/Right44100.wav",
+      "bytes": 661578,
+      "sha256": "e061eb132fd947f025acf8c4cca59360583cfda515283b30ea073e2138b06d5d"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/testdata/Stereo44100.wav",
+      "bytes": 1323078,
+      "sha256": "78d3772bee9d377cf2822411c8b6457fb80a8767a6a47dcc66676a805a7d22b7"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/worker-example/index.html",
+      "bytes": 4362,
+      "sha256": "8a462c0fecde05ac3dcaee91cbc335d3429c000c4939a950ed8a1dd5ef43d09b"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/worker-example/index.js",
+      "bytes": 2515,
+      "sha256": "9ed1d42d5a078343975301628083dd3037bbbe9727d27eb844c33416329a0efd"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/worker-example/mic.html",
+      "bytes": 3111,
+      "sha256": "e96d35bcb9476e07dd2b1b57c6d1f8d783943c2c007011970b3875c3555141bb"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/worker-example/mic.js",
+      "bytes": 3597,
+      "sha256": "8aeb71485632018dfbe3fadf7ad9f9d3fd5bd3aaceb8ded25563ec7f741b2ace"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/worker-example/worker-realtime.js",
+      "bytes": 1913,
+      "sha256": "4360ec7530787d9cfa690f76b1a3b60e873429c4f4456947ebd32101799d307e"
+    },
+    {
+      "path": "third_party/lamejs-1.2.1/worker-example/worker.js",
+      "bytes": 2333,
+      "sha256": "2048e65a632575e2db7fd8336cd74fbc7a5497249ad21a301433e7b9b3fd9602"
+    },
+    {
+      "path": "web/.gitignore",
+      "bytes": 45,
+      "sha256": "ff7f4fa52f51c549955ac26c7bba54cc8e1b7c987f0bb3e8e6dfe1ad49738166"
+    },
+    {
+      "path": "web/README.md",
+      "bytes": 1667,
+      "sha256": "07378489da096877bd86d494e145d7c5e757930b2e1b969a40ab74276c4a0080"
+    },
+    {
+      "path": "web/Unity/FIDSonifier.cs",
+      "bytes": 3920,
+      "sha256": "53a6fcb78777c8a92cec754fe5f9c4a37b2a537ee9ba2207e373eb2a62d77530"
+    },
+    {
+      "path": "web/Unity/README_GR.md",
+      "bytes": 2972,
+      "sha256": "2d5d6a1dbe9997a3297335827a84b3758ab67da30ee607be139973f96cbc187d"
+    },
+    {
+      "path": "web/dist/app.js",
+      "bytes": 24003,
+      "sha256": "32eb3c5046bdfade0ddc2e488f4ba3e5a8a862ea76e58594da59b1a26712d5ad"
+    },
+    {
+      "path": "web/dist/audio.js",
+      "bytes": 4288,
+      "sha256": "0d1d1efd352d9245f63e491f4b818ef32ebc04851da724b18a0ff36a0ef2bd00"
+    },
+    {
+      "path": "web/dist/branding.css",
+      "bytes": 1833,
+      "sha256": "e275597fd52cd7a337fc7df125dc91de9998f40e2a8f36221737a3fb29a86fcb"
+    },
+    {
+      "path": "web/dist/circuit-pipeline.js",
+      "bytes": 2514,
+      "sha256": "00a68cb1806cda81e9598f11822232bfe0426ee049fe1c92cf4d9baaceabb551"
+    },
+    {
+      "path": "web/dist/density-input.js",
+      "bytes": 6058,
+      "sha256": "ff40ef6622a40315e16c0ffeaa76fb7e7ebdcd3aff58c350ce66a85dc731329c"
+    },
+    {
+      "path": "web/dist/edit-history.js",
+      "bytes": 1696,
+      "sha256": "c1858ef6f0e91d0b160ccb540829c375780fbe38d7f6bab9cec3f0f1ade80bab"
+    },
+    {
+      "path": "web/dist/icon.svg",
+      "bytes": 238,
+      "sha256": "acf6be2c2cbdaa8ce5d8c0e806fa1f0984b34e2632ca5be94ba2ef4ad33239e8"
+    },
+    {
+      "path": "web/dist/index.html",
+      "bytes": 18787,
+      "sha256": "574a92a80325499c3e6e2f412a10f5425debc8dfff30526dd974bf45c84c7e0c"
+    },
+    {
+      "path": "web/dist/lab-auditions.js",
+      "bytes": 14092,
+      "sha256": "ccf77561d7c6fc69eee7486a2ab88fd68e7d6cda780a3bec0c2c7e65400efc3c"
+    },
+    {
+      "path": "web/dist/lab-history.js",
+      "bytes": 10075,
+      "sha256": "02c5c8f5734fd3407ce6824db56019b194be2e40511c1ab5e176f369e92959f8"
+    },
+    {
+      "path": "web/dist/lab-interface.css",
+      "bytes": 20803,
+      "sha256": "fcc37825e6275d8e0fc4ccb44cc9c369ed7c68a2b7813b4f95d51d4ea8d0b008"
+    },
+    {
+      "path": "web/dist/lab-interface.js",
+      "bytes": 48394,
+      "sha256": "caed93e19bf7599383de630da3886232dbd4e97d59ef01a318412b99c3ae1275"
+    },
+    {
+      "path": "web/dist/lab-language.js",
+      "bytes": 42925,
+      "sha256": "6adb520fd12a8a4392fd8b3fda795d49313fee4c23d188e7e6935ee9b5e8bd1d"
+    },
+    {
+      "path": "web/dist/lab-locale.js",
+      "bytes": 101241,
+      "sha256": "172a8b8caefc91bec689f8f306250097ce3f444e4d96b1a686342c405d647727"
+    },
+    {
+      "path": "web/dist/lab-presets.js",
+      "bytes": 3625,
+      "sha256": "6686a8a99839c47b6550bb9213630142a3105f3c5cb8b8fe5a424cd637e1a4f0"
+    },
+    {
+      "path": "web/dist/lab-takes.js",
+      "bytes": 5921,
+      "sha256": "381e27425ec12401817d924f5a0be004fac21a5053b9d382f1712cd6b91ad338"
+    },
+    {
+      "path": "web/dist/lab-workflow.js",
+      "bytes": 12341,
+      "sha256": "8af10f52baa3ab0ba0ef27cd145eccca2d74decc5fa436129edbe8629ba1906b"
+    },
+    {
+      "path": "web/dist/music-circuit.js",
+      "bytes": 4103,
+      "sha256": "a94cd64a5ead30ad308e06540135a46ab343530f5b1506f8a1a5c7f46c40f00f"
+    },
+    {
+      "path": "web/dist/music-controls.js",
+      "bytes": 18024,
+      "sha256": "91556719eb418502d3cca6f07bb80cf0ed72622fcc6c0e6b47c076a15df90bb3"
+    },
+    {
+      "path": "web/dist/music-export.js",
+      "bytes": 4088,
+      "sha256": "60101641bb7571a05c32e4417ff037d8a518ebf123f30e91ee69b9f68ef4dc5e"
+    },
+    {
+      "path": "web/dist/music-fx.js",
+      "bytes": 5839,
+      "sha256": "ae03b4f3f429733600f111783d9037fee0c0c172076e6561df692b16c6817d9e"
+    },
+    {
+      "path": "web/dist/notes.js",
+      "bytes": 945,
+      "sha256": "c0ee6ce9b450392644ac5fb3838f56d0f7d64c5d2e1c0bb26e60fbb0cc774ad0"
+    },
+    {
+      "path": "web/dist/quantum.js",
+      "bytes": 3781,
+      "sha256": "14ad1301bd6a4781d0f8a1353f6e4fde72edfe0ef155025575e3516ddf57533c"
+    },
+    {
+      "path": "web/dist/session.js",
+      "bytes": 3554,
+      "sha256": "903d8943b38838bca30c8af577cc8b19c3afcb9ef3d1673ab00938817702f678"
+    },
+    {
+      "path": "web/dist/studio-audio.js",
+      "bytes": 7848,
+      "sha256": "c435b1e521521e8cb6aa8b086a89d7bb4896134881a3679e1577f2ba7c6f65fa"
+    },
+    {
+      "path": "web/dist/studio-model.js",
+      "bytes": 14913,
+      "sha256": "2676600816433a0bc60c90f640ca6a1a4205c332abd15ca7b6079e5c2bde400c"
+    },
+    {
+      "path": "web/dist/studio-tempo.js",
+      "bytes": 2163,
+      "sha256": "9d5c9dd42206eaef29549e3f723a3cd437dd9aa3bb69c292960931d6f696a187"
+    },
+    {
+      "path": "web/dist/studio.css",
+      "bytes": 8802,
+      "sha256": "6a0356047c4af3ed173e96028237d89e27011bd6029b8787778cc2d762f2bb47"
+    },
+    {
+      "path": "web/dist/studio.js",
+      "bytes": 61861,
+      "sha256": "50260470b58a5e722f219ac8d3c4365c1584b11ac4261b2e478bd65c1c3ca608"
+    },
+    {
+      "path": "web/dist/style.css",
+      "bytes": 19009,
+      "sha256": "1972512089244fe115254106c1e5e98ccdbda79a0ac29dd549d056839708a9a6"
+    },
+    {
+      "path": "web/dist/take-renderer.js",
+      "bytes": 2697,
+      "sha256": "e638978537ae1c90c4209a844c95359bcac73eb1a7198cc5660e6dc09811bf20"
+    },
+    {
+      "path": "web/dist/ui.js",
+      "bytes": 36409,
+      "sha256": "de85c56e6b08db25353dc56bad35cd4093b363117377f73c37770c3bc01b5ee5"
+    },
+    {
+      "path": "web/dist/usability.css",
+      "bytes": 27733,
+      "sha256": "a58c95de7651a395169634d5596a940c1bc265cb3f489a3f0c6bda9e631b9e86"
+    },
+    {
+      "path": "web/dist/vendor/LAMEJS-LICENSE.txt",
+      "bytes": 424,
+      "sha256": "cd144ca132e3842b01f5ed2d6f3a32141e24a1cc15e115aa5f19a2294ce0a379"
+    },
+    {
+      "path": "web/dist/vendor/SPACE-GROTESK-LICENSE.txt",
+      "bytes": 4401,
+      "sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+    },
+    {
+      "path": "web/dist/vendor/SpaceGrotesk-Regular.woff2",
+      "bytes": 13388,
+      "sha256": "65fd17fcbd2e2f522940b5f67ead3d23329e02891aa5495e74d11a499c0b0673"
+    },
+    {
+      "path": "web/dist/vendor/SpaceGrotesk-SemiBold.woff2",
+      "bytes": 13284,
+      "sha256": "685bbbf69fa616df1ef81847c85fc76be097ddfb3468ff2257be54511ab3130f"
+    },
+    {
+      "path": "web/dist/vendor/UNIFRAKTUR-LICENSE.txt",
+      "bytes": 4535,
+      "sha256": "5188ea5703a25a2fee0f17586c473b3cf6018810146b021ce4bb7a2eb6499802"
+    },
+    {
+      "path": "web/dist/vendor/UnifrakturCook.woff2",
+      "bytes": 17280,
+      "sha256": "3304757748716ececd1b87999cb92d61ff5332aefbe8331d5155bbb68218e588"
+    },
+    {
+      "path": "web/dist/vendor/lame.min.js",
+      "bytes": 156043,
+      "sha256": "15d285e2587b3bdbfd18a68de6ce07cc074f7480a82c3815da2dc1c348ec6df4"
+    },
+    {
+      "path": "web/offline/Quantum_Studio_Offline.html",
+      "bytes": 980344,
+      "sha256": "43daae0f0497ac9eb56206255df77731d2436a670758265fefd6511ec5518473"
+    },
+    {
+      "path": "web/package-lock.json",
+      "bytes": 34508,
+      "sha256": "c9c73d2336aef7dd2ac1e6208c98e2ff23f03f3f4a91a18a1997637680ba4781"
+    },
+    {
+      "path": "web/package.json",
+      "bytes": 393,
+      "sha256": "c5fffc37039ee4c9b2ea9ef2b117a92a6e2585df5e13f2e3d42dc86286c5f6aa"
+    },
+    {
+      "path": "web/scripts/build.mjs",
+      "bytes": 4480,
+      "sha256": "6ec1fc4769eb8c1ea26ac3b84405ba7335136f3f4d50b08227ac8d2595bfd243"
+    },
+    {
+      "path": "web/scripts/examples.mjs",
+      "bytes": 4084,
+      "sha256": "389a65cd1650efa31bb4383dc023975a44441a282860e3a14597065c809633ba"
+    },
+    {
+      "path": "web/tests/audio.test.mjs",
+      "bytes": 4210,
+      "sha256": "369f14a6622aae6cc902a270234aed07f493211e330819fa49cac608ae40bebc"
+    },
+    {
+      "path": "web/tests/density-input.test.mjs",
+      "bytes": 3492,
+      "sha256": "a8895dbefe41bfae484c003c5b9986cbd088588009e3cf0d1b39a445d19f3a9f"
+    },
+    {
+      "path": "web/tests/first-visit.test.mjs",
+      "bytes": 2639,
+      "sha256": "27babb8b674f752dcff9009bc55e3e85ff777ef97672b4c655f2b6dd06d998ed"
+    },
+    {
+      "path": "web/tests/interface.test.mjs",
+      "bytes": 20481,
+      "sha256": "5ba1f3c3c2372eb071c005536694abde50ea891177297f0dd02a71394bfe8cf4"
+    },
+    {
+      "path": "web/tests/music-circuit-fx.test.mjs",
+      "bytes": 5292,
+      "sha256": "60715c69afaa83fe3d8c60cefc8a9221ad3a40e3912cae45f2558102390b2a50"
+    },
+    {
+      "path": "web/tests/music-export.test.mjs",
+      "bytes": 3237,
+      "sha256": "579b275d4f4932b11751d07ac796388fbf403c633e9de3d5439930180c54e482"
+    },
+    {
+      "path": "web/tests/physics.test.mjs",
+      "bytes": 4470,
+      "sha256": "b89d4946746377398b588ec3b70cfde769cc8635f903a6f7bc93220e71986f34"
+    },
+    {
+      "path": "web/tests/reference-notes.test.mjs",
+      "bytes": 2217,
+      "sha256": "0eac51eaac2b6a3c2da2fe95d99ef98d9ea722c2ce6396949f870af86746af79"
+    },
+    {
+      "path": "web/tests/static.test.mjs",
+      "bytes": 1160,
+      "sha256": "62b3fe7da54bbc4525611b75796cfea806b9c34dbb7a9685365637f0b16d72c2"
+    },
+    {
+      "path": "web/tests/studio-audio.test.mjs",
+      "bytes": 2609,
+      "sha256": "0a7166e86232cd11f8159c676dc0f36da6ffe86cf3f7682f893a3239fd0be625"
+    },
+    {
+      "path": "web/tests/studio-dom.test.mjs",
+      "bytes": 8013,
+      "sha256": "e0c05341f6d6b8d0d329e7ba03d3c01cd898f59538d1edf3553ed5b8827728b0"
+    },
+    {
+      "path": "web/tests/studio-model.test.mjs",
+      "bytes": 5831,
+      "sha256": "0f89da875994a13bc142aad621786b11ddaff9b6266cf9253b52f4524ff052d5"
+    },
+    {
+      "path": "web/tests/studio-player.test.mjs",
+      "bytes": 3363,
+      "sha256": "4a6ba439c5b16ca638859c8c8be951fd3f056ef5e3a996d504dbba08b63d3846"
+    },
+    {
+      "path": "web/tests/studio-tempo.test.mjs",
+      "bytes": 3108,
+      "sha256": "5ad9c4bfe000e2b87b4585631b1deb362d86af107f0e0c6ab16f8f5d9e7dac81"
+    },
+    {
+      "path": "web/tests/workflow-history.test.mjs",
+      "bytes": 9829,
+      "sha256": "2679ae5a9b3f5f609e94a606e81ffbe797eae8dde69714eec6c0a4dd11529aff"
+    }
+  ]
+}

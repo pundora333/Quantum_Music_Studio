@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-17",
+  "nmr_source": {
+    "filename": "Κβαντική Υπολογιστική και NMR(1).pdf",
+    "sha256": "43fd936a96515d4fee7cf8bd9412ae3b24f62290ed4489e1c53684e35e470fcd",
+    "matrix_page": 48,
+    "summary_page": 49,
+    "fidelity_code_page": 69,
+    "transcription": "One matrix transcribed from Fig.6.3.2. Summary rows now normalized directly from author CSV. Six errors in the previous PDF transcription corrected and visually checked against Fig.6.3.3.",
+    "author": "Ioannis Parras",
+    "title": "Κβαντική υπολογιστική με πυρηνικό μαγνητικό συντονισμό",
+    "work": "Master's thesis, SEMFE, NTUA, 2026"
+  },
+  "author_csv": {
+    "filename": "SpinQ_Bell_state_experiments.csv",
+    "sha256": "89ab1dfc0eb85d4958f6fe990663d4a0b4faaea16a3129e5316d6c8cbd3fdd8d",
+    "received_on": "2026-10-19",
+    "normalized_as": "summary_39.csv",
+    "normalization": "Trim leading field spaces, retain numeric precision and timestamps, map three indicator headers to *_reported. No numeric transformation.",
+    "rows": 39,
+    "correction_report": "csv_validation_2026-10-19.json"
+  },
+  "reconstruction_verified": {
+    "pages": [
+      43,
+      44
+    ],
+    "diagonal_equations": "5.2.5–5.2.8",
+    "off_diagonal_equations": "5.2.9–5.2.14",
+    "hermiticity_equation": "5.2.15",
+    "implementation_section": "5.3"
+  }
+}

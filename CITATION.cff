@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Cite the author, title and specific software version. Use the version DOI when assigned."
+title: "Quantum Music Studio"
+version: "1.7.2"
+type: software
+authors:
+  - family-names: "Μπρούσαλη"
+    given-names: "Παναγιώτα"
+abstract: "Two-qubit music and synthetic NMR sonification with JavaScript and Python/Qiskit implementations."
+keywords:
+  - quantum music
+  - NMR
+  - sonification
+  - Qiskit
+  - reproducibility

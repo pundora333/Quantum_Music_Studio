@@ -1,0 +1,16 @@
+{
+  "unit": "ms",
+  "label": "Illustrative import example, not measured calibration",
+  "qubits": [
+    {
+      "t1": 1000,
+      "t2": 2500,
+      "t2star": 50
+    },
+    {
+      "t1": 1200,
+      "t2": 300,
+      "t2star": 75
+    }
+  ]
+}

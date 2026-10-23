@@ -1,0 +1,95 @@
+{
+  "version": 5,
+  "molecule": "chloroform",
+  "model": "nmr",
+  "qubits": [
+    {
+      "theta": 0,
+      "phi": 0,
+      "radius": 1,
+      "t1": 800,
+      "t2": 80,
+      "star": 55,
+      "nu": 18
+    },
+    {
+      "theta": 0,
+      "phi": 0,
+      "radius": 1,
+      "t1": 1000,
+      "t2": 240,
+      "star": 80,
+      "nu": -32
+    }
+  ],
+  "j": 210,
+  "windowMs": 400,
+  "tauMs": 100,
+  "echo": false,
+  "readout": "none",
+  "observed": "both",
+  "stereo": "split",
+  "columns": 10,
+  "circuit": [
+    {
+      "step": 0,
+      "q": 0,
+      "type": "Ry",
+      "angle": 90
+    },
+    {
+      "step": 0,
+      "q": 1,
+      "type": "Ry",
+      "angle": 90
+    }
+  ],
+  "root": 258.6525475130918,
+  "tuning": "equal",
+  "custom": [
+    0,
+    386.3137,
+    701.955,
+    1200
+  ],
+  "sound": "fid",
+  "duration": 8,
+  "tempo": {
+    "bpm": 150,
+    "beats": 16,
+    "sync": false,
+    "mode": "model",
+    "source": "t2",
+    "qubit": 0,
+    "referenceMs": 160,
+    "rhythm": true,
+    "depth": 0.75,
+    "mapping": "bounded-inverse-v1"
+  },
+  "level": -6,
+  "fx": 0,
+  "seed": 271828,
+  "source": "Illustrative simulation; not measured hardware data",
+  "audioRhythm": {
+    "mapping": "bounded-inverse-v1",
+    "mode": "model",
+    "bpm": 160,
+    "fixedBpm": 150,
+    "rangeBpm": [
+      120,
+      180
+    ],
+    "source": "t2",
+    "qubit": 0,
+    "timeMs": 80,
+    "referenceMs": 160,
+    "rhythmEnabled": true,
+    "depth": 0.75,
+    "pulsePower": 4,
+    "formula": "120 + 60 / (1 + T / Tref)",
+    "envelope": "(1-depth) + depth * ((1+cos(2*pi*BPM*t_audio/60))/2)^4",
+    "physicalWindowMs": 400,
+    "audioDurationSeconds": 8,
+    "physicalSecondsPerAudioSecond": 0.05
+  }
+}

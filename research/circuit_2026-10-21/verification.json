@@ -1,0 +1,30 @@
+{
+  "version": "1.7.2",
+  "date": "2026-10-21",
+  "javascriptPassed": 94,
+  "pythonPassed": 41,
+  "parrasIncluded": 5,
+  "failures": 0,
+  "skips": 0,
+  "browserQA": {
+    "browser": "Chrome",
+    "scope": "desktop preview",
+    "paletteCount": 14,
+    "gridDisplay": "grid",
+    "reverseCnotLabels": [
+      "Target q0",
+      "Control q1"
+    ],
+    "PangleEdited": 45,
+    "SWAPheader": "1 · SWAP",
+    "englishAndGreekChecked": true,
+    "documentOverflow": false,
+    "placedGateReopensInspector": true
+  },
+  "notPerformed": [
+    "physical mobile test",
+    "full cross-browser certification",
+    "participant usability study",
+    "new hardware measurement"
+  ]
+}

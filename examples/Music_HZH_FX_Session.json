@@ -1,0 +1,141 @@
+{
+  "application": "Pundora Quantum Music Studio",
+  "version": 2,
+  "createdAt": "2026-10-19T23:43:11.730Z",
+  "referenceA4Hz": 435,
+  "audioExport": {
+    "sampleRateHz": 44100,
+    "loops": 1,
+    "sequenceSeconds": 3.2,
+    "tailSeconds": 3.5,
+    "variant": "both",
+    "tailPolicy": "include",
+    "tailCapped": false,
+    "variantTails": {
+      "clean": 0.3,
+      "processed": 3.5
+    },
+    "chain": "oscillator/envelope -> low-pass -> ordered classical FX -> output level -> compressor; clean bypasses FX; same graph as live Music Lab"
+  },
+  "model": "Ideal pure-state two-qubit simulation; q0 is left bit; independently re-prepared shots; seeded classical sampling.",
+  "config": {
+    "theta0": 0,
+    "phi0": 0,
+    "theta1": 0,
+    "phi1": 0,
+    "cnot": false,
+    "circuit": [
+      {
+        "type": "H",
+        "q": 0
+      },
+      {
+        "type": "Z",
+        "q": 0
+      },
+      {
+        "type": "H",
+        "q": 0
+      }
+    ],
+    "fx": {
+      "bypass": false,
+      "order": [
+        "drive",
+        "delay",
+        "reverb"
+      ],
+      "drive": {
+        "enabled": true,
+        "amount": 3,
+        "mix": 0.5
+      },
+      "delay": {
+        "enabled": true,
+        "beats": 0.5,
+        "feedback": 0.35,
+        "mix": 0.25
+      },
+      "reverb": {
+        "enabled": true,
+        "seconds": 1.6,
+        "mix": 0.2
+      }
+    },
+    "exportFlavor": "both",
+    "exportTail": "include",
+    "basis0": "Z",
+    "basis1": "Z",
+    "root": 258.6525475130918,
+    "degrees": [
+      0,
+      4,
+      7,
+      12
+    ],
+    "custom": [
+      0,
+      386.313714,
+      701.955001,
+      1200
+    ],
+    "tuning": "equal",
+    "mode": "shots",
+    "exportLoops": 1,
+    "bpm": 150,
+    "division": 2,
+    "gate": 0.7,
+    "wave": "sine",
+    "cutoff": 16000,
+    "volume": -12,
+    "seed": 271828
+  },
+  "stateAmplitudes": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1.0000000000000002,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "probabilities": [
+    0,
+    0,
+    1,
+    0
+  ],
+  "outcomes": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "frequenciesHz": [
+    258.6525475130918,
+    325.8817892206782,
+    387.54094239104757,
+    517.3050950261836
+  ]
+}

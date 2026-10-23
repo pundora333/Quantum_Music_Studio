@@ -1,0 +1,48 @@
+{
+  "version": 3,
+  "molecule": "phosphite",
+  "model": "nmr",
+  "qubits": [
+    {
+      "theta": 0,
+      "phi": 0,
+      "radius": 1,
+      "t1": 5000,
+      "t2": 200,
+      "star": 200,
+      "nu": -24
+    },
+    {
+      "theta": 0,
+      "phi": 0,
+      "radius": 1,
+      "t1": 5000,
+      "t2": 200,
+      "star": 200,
+      "nu": 42
+    }
+  ],
+  "j": 697.4,
+  "windowMs": 400,
+  "tauMs": 100,
+  "echo": false,
+  "readout": "none",
+  "observed": "both",
+  "stereo": "split",
+  "columns": 10,
+  "circuit": [],
+  "root": 258.6525475130918,
+  "tuning": "equal",
+  "custom": [
+    0,
+    386.3137,
+    701.955,
+    1200
+  ],
+  "sound": "fid",
+  "duration": 8,
+  "level": -6,
+  "fx": 0,
+  "seed": 271828,
+  "source": "Secondary analysis: Parras Fig. 6.3.2, PSD-transformed matrix; illustrative evolution"
+}

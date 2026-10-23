@@ -1,0 +1,31 @@
+{
+  "software_version": "1.7.2",
+  "checked_on": "2026-10-21",
+  "package_scope": "Public software repository: application, documentation, examples, reproducibility checks and attributed analysis",
+  "tests": {
+    "javascript": {
+      "passed": 94,
+      "failed": 0,
+      "skipped": 0
+    },
+    "python": {
+      "passed": 41,
+      "failed": 0,
+      "skipped": 0,
+      "secondary_analysis_checks_included": 5
+    }
+  },
+  "executable_and_dependency_files_byte_identical_to_verified_1_7_2": 263,
+  "retained_csv_wav_files_byte_identical": 17,
+  "upstream_sources_and_licenses_preserved": true,
+  "file_selection_checked": true,
+  "local_markdown_links_checked": true,
+  "private_working_documents_excluded": true,
+  "private_hosting_records_excluded": true,
+  "credential_pattern_scan_matches": 0,
+  "limitations": [
+    "Pattern scanning is not a guarantee against all possible secrets.",
+    "No new hardware experiment or participant study.",
+    "Existing desktop browser evidence is dated separately."
+  ]
+}

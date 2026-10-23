@@ -1,0 +1,103 @@
+{
+  "recorded_on": "2026-10-19",
+  "source_filename": "SpinQ_Bell_state_experiments.csv",
+  "source_sha256": "89ab1dfc0eb85d4958f6fe990663d4a0b4faaea16a3129e5316d6c8cbd3fdd8d",
+  "source_preserved_byte_for_byte": true,
+  "source_delimiter": ";",
+  "normalized_delimiter": ",",
+  "normalization": "Trim leading field spaces, retain numeric precision and timestamps, map three indicator headers to *_reported. No numeric transformation.",
+  "prior_transcription_sha256": "c03ddc6d1173d85bbd02a43a1a09389f8cc6c9f2009e7905fde1c5660a4791e4",
+  "normalized_sha256": "cff779b5b5fca980ca7b464684fa4b68b54db043674e5d7cbccbe0a1fc2fa60a",
+  "rows": 39,
+  "columns": 10,
+  "compared_fields": 390,
+  "unchanged_fields": 384,
+  "corrected_transcription_fields": [
+    {
+      "Experiment_ID": 10,
+      "field": "Entropy",
+      "previous_transcription": "0.293483",
+      "author_csv_and_original_pdf": "0.293488"
+    },
+    {
+      "Experiment_ID": 24,
+      "field": "Fidelity",
+      "previous_transcription": "0.800503",
+      "author_csv_and_original_pdf": "0.600503"
+    },
+    {
+      "Experiment_ID": 28,
+      "field": "Concurrence",
+      "previous_transcription": "0.223165",
+      "author_csv_and_original_pdf": "0.223155"
+    },
+    {
+      "Experiment_ID": 29,
+      "field": "Fidelity",
+      "previous_transcription": "0.931362",
+      "author_csv_and_original_pdf": "0.931382"
+    },
+    {
+      "Experiment_ID": 30,
+      "field": "Entropy",
+      "previous_transcription": "0.699556",
+      "author_csv_and_original_pdf": "0.699656"
+    },
+    {
+      "Experiment_ID": 33,
+      "field": "Entropy",
+      "previous_transcription": "0.626797",
+      "author_csv_and_original_pdf": "0.636797"
+    }
+  ],
+  "six_corrected_values_visually_checked_against_pdf": {
+    "page": 49,
+    "figure": "6.3.3",
+    "embedded_images": [
+      0,
+      1
+    ]
+  },
+  "ids_complete_unique_and_ordered": true,
+  "missing_fields": 0,
+  "temperature_endpoint_relations_passed": 39,
+  "descriptive_statistics": {
+    "Fidelity_reported": {
+      "min": 0.600503,
+      "max": 1.0,
+      "mean": 0.8683523076923076
+    },
+    "Concurrence_reported": {
+      "min": 0.035242,
+      "max": 0.965209,
+      "mean": 0.6028355128205128
+    },
+    "Entropy_reported": {
+      "min": 0.069496,
+      "max": 0.902745,
+      "mean": 0.5101887435897436
+    },
+    "Duration_sec": {
+      "min": 306.3,
+      "max": 322.5,
+      "mean": 314.65641025641025
+    },
+    "Temp_average": {
+      "min": 27.588,
+      "max": 29.557,
+      "mean": 28.22392307692308
+    }
+  },
+  "reconstruction_source": {
+    "pages": [
+      43,
+      44
+    ],
+    "diagonal_equations": "5.2.5–5.2.8",
+    "off_diagonal_equations": "5.2.9–5.2.14",
+    "hermiticity_equation": "5.2.15",
+    "implementation_section": "5.3"
+  },
+  "scope": "CSV validation and descriptive statistics. Not an independent recomputation of 39 fidelities/concurrences from full matrices. No new hardware measurements or measured FID received.",
+  "prior_scientific_test_suite": "5/5 recorded on 2026-10-17; not rerun in this data-only update. Qiskit is unavailable in the current runtime. Numerical model/code and one-matrix audio are unchanged."
+}
