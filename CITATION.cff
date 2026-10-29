@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Cite the author, title and specific software version. Use the version DOI when assigned."
+message: "Prior written permission is required for original code reuse; see LICENSE. Authorized use must cite the author, title and version. Use the version DOI when assigned."
 title: "Quantum Music Studio"
 version: "1.7.2"
 type: software
@@ -13,3 +13,4 @@ keywords:
   - sonification
   - Qiskit
   - reproducibility
+license-url: "https://github.com/pundora333/Quantum_Music_Studio/blob/main/LICENSE"

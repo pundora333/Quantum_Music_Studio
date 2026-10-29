@@ -1,14 +1,61 @@
-Copyright (c) 2026 Παναγιώτα Μπρούσαλη (creative name: Pundora).
-All rights reserved for original project material.
+QUANTUM MUSIC STUDIO
+PROPRIETARY SOFTWARE TERMS - PRIOR WRITTEN PERMISSION REQUIRED
+Version of this notice: 30 October 2026
 
-No general open-source license is granted for the original project code,
-interface, text or media by this notice. Public availability does not grant
-a general permission to reuse, modify or redistribute that original material.
-Applicable law and the terms of a hosting platform remain applicable.
-The author may separately select and publish different first-party terms.
+Copyright (c) 2026 Μπρούσαλη Παναγιώτα (Pundora).
+All rights reserved in the original software to the extent held by the author.
 
-Third-party components retain their own licenses. See THIRD_PARTY_NOTICES.md,
-docs/RIGHTS_SCOPE.md, licenses/ and third_party/. This notice does not restrict
-rights granted by those third-party licenses. The included lamejs/LAME source
-and license texts preserve those third-party terms. Data attributed to another
-researcher are not claimed as original project material or relicensed here.
+1. Scope
+These terms apply to original first-party source code and original application
+interface code in Quantum Music Studio. They do not license the thesis text,
+third-party software, fonts, third-party research data, or other material with
+separately stated terms. Third-party components retain their own licenses and
+notices; see THIRD_PARTY_NOTICES.md, docs/RIGHTS_SCOPE.md, licenses/ and
+third_party/. No restriction in this notice overrides those licenses.
+
+2. Permission required
+Except to the extent permitted by applicable law, the terms of the hosting
+platform, or an existing valid authorization, no general permission is granted
+to use or execute, reproduce, modify, incorporate, distribute, sublicense,
+sell, or otherwise commercially exploit the original software or substantial
+portions of it. Obtain the author's express prior written permission for the
+intended use, including academic or non-commercial use and reuse of original
+code fragments. Public availability, downloading, attribution, or citation
+alone does not constitute such permission. This is not an open-source license.
+
+3. Requests and written authorization
+Request permission from Μπρούσαλη Παναγιώτα through the repository's issue
+tracker: https://github.com/pundora333/Quantum_Music_Studio/issues
+Identify the version and code concerned, the intended use, and whether any
+modification, redistribution or commercial use is proposed. Wait for express
+written authorization from the author, identifying the allowed scope, before
+proceeding. Silence or absence of a refusal is not consent. The author's
+written authorization may set additional conditions for that particular use.
+
+4. Attribution for authorized reuse
+Unless the written authorization expressly states otherwise, retain applicable
+copyright and permission notices and acknowledge the author, Quantum Music
+Studio, the version used and the repository URL. Cite the version DOI when one
+has actually been assigned. Mark modifications and do not imply the author's
+endorsement. Attribution does not replace the permission required above.
+
+5. Rights preserved
+Nothing here limits statutory exceptions or other non-waivable rights, rights
+already granted under a valid license, or viewing and forking rights granted
+by the applicable hosting-platform terms. Those rights do not, by themselves,
+grant a broader license to reuse the original software. No ownership of
+third-party material or of unprotectable ideas, facts or methods is claimed.
+
+6. No warranty
+To the extent permitted by applicable law, the software is provided as is,
+without warranty. The author does not warrant fitness for any purpose or
+error-free operation. This clause does not exclude liability that cannot
+lawfully be excluded.
+
+Thesis text and academic citation
+The thesis retains its own copyright notice and stated permissions. Scholarly
+quotation, paraphrase and use of the thesis as a source should acknowledge
+Μπρούσαλη Παναγιώτα, the thesis title and year, and the relevant page or section
+where appropriate. Any reproduction requiring authorization must also comply
+with the thesis's separate terms and applicable law. Citation alone is not a
+blanket reproduction license for the thesis or its figures.

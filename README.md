@@ -129,7 +129,13 @@ Use `CITATION.cff` for the author, title and software version. A permanent
 version DOI should be added when assigned; this package invents no DOI,
 repository URL, ORCID or research commit.
 
-Original material retains **All rights reserved** under `LICENSE`.
+Original first-party software is subject to **prior written permission** from
+Μπρούσαλη Παναγιώτα (Pundora) under [LICENSE](LICENSE), including academic,
+non-commercial and commercial reuse. Attribution alone does not grant permission.
+Request permission through the repository issue tracker and wait for express
+written authorization. Applicable legal exceptions and hosting-platform rights
+are preserved. The thesis text has separate copyright terms; scholarly use must
+provide the appropriate citation.
 Third-party software, fonts and attributed research data retain separate
 terms and provenance; see [material scope](docs/RIGHTS_SCOPE.md) and
 `THIRD_PARTY_NOTICES.md`. The upstream encoder source and license texts

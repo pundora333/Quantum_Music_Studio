@@ -1,6 +1,6 @@
 {
   "software_version": "1.7.2",
-  "created_on": "2026-10-21",
+  "created_on": "2026-10-30",
   "scope": "Public repository package",
   "excludes_self": true,
   "file_count_including_manifest": 297,
@@ -17,18 +17,18 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 461,
-      "sha256": "7c35465ab29bf48eac3711684131a1a5dfff084a32ffce7c6def4471cbbedae7"
+      "bytes": 622,
+      "sha256": "bb44d7062df68b0ca9c6997dcb36997b5ce980851112fcca3b75ce6f1e19e635"
     },
     {
       "path": "LICENSE",
-      "bytes": 898,
-      "sha256": "fefe7816e7b4fb2a899ef9193219737bc32e76ab901aebd6390372cad775e6bb"
+      "bytes": 3537,
+      "sha256": "f0c6112b0e3d470acaa34fb6d7a459b564e3af3d23655151dade7edb1812f201"
     },
     {
       "path": "README.md",
-      "bytes": 6023,
-      "sha256": "8abe3b283596876a5f93217f714425d56dbc08322dfd22c476500224a2b22d43"
+      "bytes": 6480,
+      "sha256": "ea3258442b362966a110168db53f2f86fdd668df05224d536badbd9726ffe754"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -47,8 +47,8 @@
     },
     {
       "path": "docs/RIGHTS_SCOPE.md",
-      "bytes": 2021,
-      "sha256": "aeec75ce10f4fa1cd2f727ce73a344206a46bc607fecab4f88f5f92c802a3dbf"
+      "bytes": 2538,
+      "sha256": "3852f558ac61a9ec27e93d463c9d51d329d82f39c9ade26e8ad09373bc342d8a"
     },
     {
       "path": "docs/TEST_GUIDE_GR.md",
