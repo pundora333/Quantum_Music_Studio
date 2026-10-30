@@ -1,11 +1,16 @@
 cff-version: 1.2.0
-message: "Prior written permission is required for original code reuse; see LICENSE. Authorized use must cite the author, title and version. Use the version DOI when assigned."
-title: "Quantum Music Studio"
+message: "Please cite this software using the metadata below. Prior written permission is required for original code reuse; attribution alone does not grant permission. See LICENSE."
+title: "Quantum Music Studio 1.7.2 — Thesis edition"
 version: "1.7.2"
+date-released: "2026-10-30"
 type: software
 authors:
-  - family-names: "Μπρούσαλη"
-    given-names: "Παναγιώτα"
+  - family-names: "Brousali"
+    given-names: "Panagiota"
+doi: "10.5281/zenodo.23804236"
+url: "https://zenodo.org/records/23804236"
+repository-code: "https://github.com/pundora333/Quantum_Music_Studio"
+commit: "3d2ed241c7f3ef78fee82254b90ac7777ef75cb5"
 abstract: "Two-qubit music and synthetic NMR sonification with JavaScript and Python/Qiskit implementations."
 keywords:
   - quantum music
@@ -13,4 +18,4 @@ keywords:
   - sonification
   - Qiskit
   - reproducibility
-license-url: "https://github.com/pundora333/Quantum_Music_Studio/blob/main/LICENSE"
+license-url: "https://github.com/pundora333/Quantum_Music_Studio/blob/quantum-music-studio-v1.7.2-thesis-301026/LICENSE"

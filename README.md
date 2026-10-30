@@ -1,6 +1,6 @@
 # Quantum Music Studio
 
-Version **1.7.2** · Author **Παναγιώτα Μπρούσαλη** · Creative name **Pundora**.
+Version **1.7.2** · Author **Panagiota Brousali (Μπρούσαλη Παναγιώτα)** · Creative name **Pundora**.
 
 Quantum Music Studio is an interactive instrument for two-qubit music
 sonification and synthetic two-spin NMR free-induction decay. It includes
@@ -125,9 +125,24 @@ package, excluding the manifest itself.
 
 ## Citation and distribution
 
-Use `CITATION.cff` for the author, title and software version. A permanent
-version DOI should be added when assigned; this package invents no DOI,
-repository URL, ORCID or research commit.
+The thesis reference release is **Quantum Music Studio 1.7.2 — Thesis edition**,
+published on 30 October 2026 and archived in Zenodo:
+
+- Version DOI: **[10.5281/zenodo.23804236](https://doi.org/10.5281/zenodo.23804236)**.
+- [GitHub release](https://github.com/pundora333/Quantum_Music_Studio/releases/tag/quantum-music-studio-v1.7.2-thesis-301026).
+- Release tag: `quantum-music-studio-v1.7.2-thesis-301026`.
+- Archived source commit: `3d2ed241c7f3ef78fee82254b90ac7777ef75cb5`.
+
+Suggested citation:
+
+> Brousali, P. (2026). *Quantum Music Studio 1.7.2 — Thesis edition*
+> (Version 1.7.2) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23804236
+
+Use `CITATION.cff` for machine-readable citation metadata. The version DOI
+identifies the frozen release above. This distribution adds the assigned DOI
+to the citation metadata after archiving; executable code, scientific data,
+examples and license terms remain those of the archived release. Use the
+Zenodo archive to reproduce the thesis reference snapshot.
 
 Original first-party software is subject to **prior written permission** from
 Μπρούσαλη Παναγιώτα (Pundora) under [LICENSE](LICENSE), including academic,
