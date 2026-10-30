@@ -9,7 +9,8 @@
     "transcription": "One matrix transcribed from Fig.6.3.2. Summary rows now normalized directly from author CSV. Six errors in the previous PDF transcription corrected and visually checked against Fig.6.3.3.",
     "author": "Ioannis Parras",
     "title": "Κβαντική υπολογιστική με πυρηνικό μαγνητικό συντονισμό",
-    "work": "Master's thesis, SEMFE, NTUA, 2026"
+    "work": "Master's thesis, SEMFE, NTUA, 2026",
+    "role": "Original PDF actually used for matrix transcription and historical summary cross-check; not the revised edition"
   },
   "author_csv": {
     "filename": "SpinQ_Bell_state_experiments.csv",
@@ -28,6 +29,33 @@
     "diagonal_equations": "5.2.5–5.2.8",
     "off_diagonal_equations": "5.2.9–5.2.14",
     "hermiticity_equation": "5.2.15",
-    "implementation_section": "5.3"
+    "implementation_section": "5.3",
+    "scope": "Equations and pages of the original transcription PDF identified by nmr_source.sha256"
+  },
+  "metadata_revised_on": "2026-10-30",
+  "revised_reference": {
+    "source": "Revised Parras (2026) thesis, as cited in supervisor corrections supplied by the thesis author",
+    "matrix_page": 59,
+    "summary_page": 61,
+    "summary_figure": "6.3.4",
+    "chsh_page": 69,
+    "chsh_reported": {
+      "mean_s": 2.57,
+      "reported_uncertainty": 0.07,
+      "executions": 19,
+      "single_execution_s": 2.7216,
+      "scope": "Attributed source summary; not recomputed from this repository"
+    },
+    "physical_polarization_reported": {
+      "order_of_magnitude": 1e-06,
+      "per_nucleus_approximate": {
+        "1H": 2e-06,
+        "31P": 9e-07
+      },
+      "scope": "Approximate source values supplied in supervisor corrections, not per-nucleus calibration in this package"
+    },
+    "verification_status": "Page/figure references and experimental summary supplied in supervisor corrections; revised PDF identity and hash not independently verified",
+    "sha256": null,
+    "relationship_to_original": "Revised references do not replace the identity, hash, pages or figure numbers of the original PDF used for transcription."
   }
 }

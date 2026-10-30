@@ -1,7 +1,7 @@
 {
   "date": "2026-10-17",
-  "source_matrix": "Parras 2026, Fig. 6.3.2, p. 48",
-  "source_summary": "Author-supplied SpinQ_Bell_state_experiments.csv, received 2026-10-19; cross-checked with Parras Fig. 6.3.3 p.49",
+  "source_matrix": "Parras (2026), revised edition, matrix p. 59 (reference supplied in supervisor corrections); original transcription source identified in provenance.json",
+  "source_summary": "Author-supplied SpinQ_Bell_state_experiments.csv, received 2026-10-19; revised-edition reference: Fig. 6.3.4, p. 61 (supplied in supervisor corrections)",
   "source_matrix_experiment_id": null,
   "raw": {
     "eigenvalues": [
@@ -95,9 +95,11 @@
   "limitations": [
     "One rounded matrix; not 39 complete matrices",
     "No defensible match of the matrix to a summary Experiment_ID",
-    "Raw matrix is not PSD; errors Invalid state appear in the source screenshot",
-    "PSD transformation is a sensitivity choice, not recovered measurement data",
-    "Source equations use root fidelity; Appendix Gamma p.69 squares qutip.fidelity; author confirms intended squared fidelity",
+    "Raw matrix is not PSD and has a negative 01 population",
+    "PSD clipping/renormalisation is a sensitivity choice, not recovered measurement data or SGS projection",
+    "All 39 reported pairs violate F <= (1+C)/2 under the stated squared Bell-fidelity convention; descriptive use only",
+    "Revised-edition page references and experimental summary are supplied in supervisor corrections; revised PDF identity/hash not independently verified",
+    "Model epsilon=1e-5 is illustrative, not the physical polarization reported for each nucleus",
     "Temp_Error is half the endpoint difference, not an estimated standard error",
     "No uncertainty on matrix elements and no raw tomography files",
     "No new hardware acquisition or human listening test"
@@ -149,5 +151,67 @@
     "ideal_max_abs": 0.0
   },
   "summary_updated_on": "2026-10-19",
-  "summary_validation": "csv_validation_2026-10-19.json"
+  "summary_validation": "csv_validation_2026-10-19.json",
+  "metadata_revised_on": "2026-10-30",
+  "source_provenance": "provenance.json",
+  "revised_reference_verification": "Page/figure references and experimental summary supplied in supervisor corrections; revised PDF identity and hash not independently verified",
+  "summary_consistency": {
+    "criterion": "F <= (1 + C) / 2",
+    "fidelity_convention": "Squared fidelity to the ideal Phi+ Bell state",
+    "absolute_tolerance": 1e-06,
+    "rows_checked": 39,
+    "violating_rows": 39,
+    "violating_experiment_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "min_excess": 0.004930999999999908,
+    "max_excess": 0.23054200000000002,
+    "example": {
+      "experiment_id": 22,
+      "fidelity_reported": 1.0,
+      "concurrence_reported": 0.965209,
+      "upper_bound": 0.9826045,
+      "excess": 0.017395500000000008
+    },
+    "interpretation": "Reported pairs are used descriptively, not as independently validated physical states. Their incompatibility with this necessary bound is consistent with the linear-reconstruction caution identified in the supervisor corrections; the original CSV values are not altered."
+  },
+  "fidelity_convention": "Squared Bell fidelity is used for comparison; psd_fidelity_root is also explicitly provided as its square root."
 }

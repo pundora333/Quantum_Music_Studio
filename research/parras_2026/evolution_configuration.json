@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 5,
   "molecule": "phosphite",
   "model": "nmr",
   "qubits": [
@@ -41,8 +41,20 @@
   ],
   "sound": "fid",
   "duration": 8,
+  "tempo": {
+    "bpm": 150,
+    "beats": 16,
+    "sync": false,
+    "mode": "fixed",
+    "source": "t2",
+    "qubit": 0,
+    "referenceMs": 160,
+    "rhythm": false,
+    "depth": 0.75,
+    "mapping": "bounded-inverse-v1"
+  },
   "level": -6,
   "fx": 0,
   "seed": 271828,
-  "source": "Secondary analysis: Parras Fig. 6.3.2, PSD-transformed matrix; illustrative evolution"
+  "source": "Secondary analysis: Parras (2026), original matrix transcription; see provenance.json; PSD-transformed matrix, illustrative evolution"
 }

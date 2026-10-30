@@ -322,8 +322,8 @@
     },
     {
       "path": "research/analyse_parras.py",
-      "bytes": 9360,
-      "sha256": "1f97e985d3f286eb99877c293f06125907008d8a7026384c96315a1537a93795"
+      "bytes": 13005,
+      "sha256": "a11a77883ee2eed660e5a4a4db4b4102b4914491c52a71de5b8ae61f81ede184"
     },
     {
       "path": "research/circuit_2026-10-21/javascript-tests.log",
@@ -347,8 +347,8 @@
     },
     {
       "path": "research/parras_2026/README.md",
-      "bytes": 3793,
-      "sha256": "51e22a78f1c8c0bcfa5f1b8cd1c1d51d96fdc5e6cc5bc3a0ce2866c036477559"
+      "bytes": 6674,
+      "sha256": "6be05c758e6ff610964a7656f426e42dc62984d15e78f5afe554e10f86ef253d"
     },
     {
       "path": "research/parras_2026/SpinQ_Bell_state_experiments.csv",
@@ -357,8 +357,8 @@
     },
     {
       "path": "research/parras_2026/analysis.json",
-      "bytes": 3865,
-      "sha256": "982c140e674ef9682801e538d3ba4ff861a8b2abcc4d748f688436e92ad92235"
+      "bytes": 5899,
+      "sha256": "157ecaecf58a97b35dc0055b32b53619af80ddb743cb266f65e6caed94abb74b"
     },
     {
       "path": "research/parras_2026/comparison.png",
@@ -372,8 +372,8 @@
     },
     {
       "path": "research/parras_2026/evolution_configuration.json",
-      "bytes": 809,
-      "sha256": "986e02fbdb2f3be7aa425e2116dedbd143ae1976517059dccb70ef80ada67830"
+      "bytes": 1084,
+      "sha256": "819b2bfe20d88869402f9bf109c7d79c534a80e56307687af9f2cffdf25ceb1e"
     },
     {
       "path": "research/parras_2026/fid_comparison.csv",
@@ -392,8 +392,8 @@
     },
     {
       "path": "research/parras_2026/provenance.json",
-      "bytes": 1408,
-      "sha256": "2bee065ac43d83d0a90a350eb8bccbf3651780fe2dd095d5e975eb0d9d94eb98"
+      "bytes": 2783,
+      "sha256": "ab6b07db17ea46cee6e570f00a9a846719cf9c2b7781abf65b493e8308262f84"
     },
     {
       "path": "research/parras_2026/rho_psd.csv",
@@ -422,8 +422,8 @@
     },
     {
       "path": "research/test_parras_analysis.py",
-      "bytes": 2629,
-      "sha256": "fd8b2487b2a6e95eacd2b60625d9c78a0f8bc7d8e10106ebb322a47a84a5b089"
+      "bytes": 3505,
+      "sha256": "14f8c7a6f2ab3dae637150a31dc88c0a183f39cd26bded17de9742fd3c8d978d"
     },
     {
       "path": "research/validation_report.json",

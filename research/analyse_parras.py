@@ -1,8 +1,9 @@
-"""Secondary analysis of Parras (2026), Figs. 6.3.2--3, pp. 48--49.
+"""Secondary analysis of the attributed Parras (2026) matrix and summary CSV.
 
 Run from the project root: python research/analyse_parras.py
-No live hardware or UI matrix-import feature is involved. The matrix in the
-PDF has no experiment ID; it MUST NOT be paired with a summary-table row.
+Source versions and verification status are distinguished in provenance.json.
+The printed matrix has no experiment ID; it MUST NOT be paired with a row.
+Reported summary indicators are retained and used descriptively.
 """
 from pathlib import Path
 import csv
@@ -23,6 +24,65 @@ from qiskit.quantum_info import state_fidelity, concurrence
 
 DATA = ROOT / 'research' / 'parras_2026'
 BASIS = ['00', '01', '10', '11']
+
+
+def summary_consistency(rows, tolerance=1e-6):
+    """Check a necessary Bell squared-fidelity/concurrence consistency bound.
+
+    This tests compatibility of reported indicator pairs, not 39 reconstructed
+    states. A tolerance of 1e-6 exceeds combined six-decimal rounding error.
+    """
+    diagnostics = []
+    for row in rows:
+        f = float(row['Fidelity_reported'])
+        c = float(row['Concurrence_reported'])
+        upper = (1 + c) / 2
+        diagnostics.append(dict(experiment_id=int(row['Experiment_ID']),
+                                fidelity_reported=f, concurrence_reported=c,
+                                upper_bound=upper, excess=f-upper))
+    violations = [d for d in diagnostics if d['excess'] > tolerance]
+    return dict(criterion='F <= (1 + C) / 2',
+                fidelity_convention='Squared fidelity to the ideal Phi+ Bell state',
+                absolute_tolerance=tolerance,
+                rows_checked=len(diagnostics), violating_rows=len(violations),
+                violating_experiment_ids=[d['experiment_id'] for d in violations],
+                min_excess=min((d['excess'] for d in diagnostics), default=None),
+                max_excess=max((d['excess'] for d in diagnostics), default=None),
+                example=next((d for d in diagnostics if d['experiment_id'] == 22), None),
+                interpretation='Reported pairs are used descriptively, not as independently validated physical states. '
+                               'Their incompatibility with this necessary bound is consistent with the '
+                               'linear-reconstruction caution identified in the supervisor corrections; '
+                               'the original CSV values are not altered.')
+
+
+def research_annotations(rows):
+    """Shared annotations for the archived report and future regeneration."""
+    provenance = json.loads((DATA / 'provenance.json').read_text(encoding='utf-8'))
+    revised = provenance['revised_reference']
+    return dict(metadata_revised_on='2026-10-30',
+                source_matrix='Parras (2026), revised edition, matrix p. 59 '
+                              '(reference supplied in supervisor corrections); '
+                              'original transcription source identified in provenance.json',
+                source_summary='Author-supplied SpinQ_Bell_state_experiments.csv, received 2026-10-19; '
+                               'revised-edition reference: Fig. 6.3.4, p. 61 '
+                               '(supplied in supervisor corrections)',
+                source_provenance='provenance.json',
+                revised_reference_verification=revised['verification_status'],
+                summary_updated_on='2026-10-19',
+                summary_validation='csv_validation_2026-10-19.json',
+                summary_consistency=summary_consistency(rows),
+                fidelity_convention='Squared Bell fidelity is used for comparison; '
+                                    'psd_fidelity_root is also explicitly provided as its square root.',
+                limitations=['One rounded matrix; not 39 complete matrices',
+                             'No defensible match of the matrix to a summary Experiment_ID',
+                             'Raw matrix is not PSD and has a negative 01 population',
+                             'PSD clipping/renormalisation is a sensitivity choice, not recovered measurement data or SGS projection',
+                             'All 39 reported pairs violate F <= (1+C)/2 under the stated squared Bell-fidelity convention; descriptive use only',
+                             'Revised-edition page references and experimental summary are supplied in supervisor corrections; revised PDF identity/hash not independently verified',
+                             'Model epsilon=1e-5 is illustrative, not the physical polarization reported for each nucleus',
+                             'Temp_Error is half the endpoint difference, not an estimated standard error',
+                             'No uncertainty on matrix elements and no raw tomography files',
+                             'No new hardware acquisition or human listening test'])
 
 
 def load_matrix(path=DATA / 'rho_raw.csv'):
@@ -77,9 +137,13 @@ def configuration():
     c = defaults()
     c.update(molecule='phosphite', j=697.4, windowMs=400, circuit=[],
              readout='none', echo=False, duration=8,
-             source='Secondary analysis: Parras Fig. 6.3.2, PSD-transformed matrix; illustrative evolution')
+             source='Secondary analysis: Parras (2026), original matrix transcription; '
+                    'see provenance.json; PSD-transformed matrix, illustrative evolution')
     for q, nu in zip(c['qubits'], [-24, 42]):
         q.update(t1=5000, t2=200, star=200, nu=nu)
+    # Preserve the archived research example's unpulsed audio interpretation,
+    # rather than inheriting the interactive Studio's model-linked rhythm.
+    c['tempo'].update(mode='fixed', rhythm=False)
     return validate(c)
 
 
@@ -121,8 +185,7 @@ def main():
     raw = load_matrix()
     projected = clip_and_renormalise(raw)
     bell = np.outer([1, 0, 0, 1], [1, 0, 0, 1]) / 2
-    report = dict(date='2026-10-17', source_matrix='Parras 2026, Fig. 6.3.2, p. 48',
-                  source_summary='Parras 2026, Fig. 6.3.3, p. 49',
+    report = dict(date='2026-10-17',
                   source_matrix_experiment_id=None,
                   raw=linear_metrics(raw), psd=linear_metrics(projected),
                   transformation='Negative eigenvalues set to zero; remaining eigenvalues divided by their sum',
@@ -131,15 +194,7 @@ def main():
                   raw_overlap_is_valid_fidelity=False,
                   psd_fidelity_squared=float(state_fidelity(projected, bell)),
                   psd_fidelity_root=float(np.sqrt(state_fidelity(projected, bell))),
-                  psd_concurrence=float(concurrence(projected)),
-                  limitations=['One rounded matrix; not 39 complete matrices',
-                               'No defensible match of the matrix to a summary Experiment_ID',
-                               'Raw matrix is not PSD; errors Invalid state appear in the source screenshot',
-                               'PSD transformation is a sensitivity choice, not recovered measurement data',
-                               'Source equations 6.1.1-2 use root fidelity; Appendix Gamma p.69 code squares qutip.fidelity',
-                               'Temp_Error is half the endpoint difference, not an estimated standard error',
-                               'No uncertainty on matrix elements and no raw tomography files',
-                               'No new hardware acquisition or human listening test'])
+                  psd_concurrence=float(concurrence(projected)))
     with (DATA / 'rho_psd.csv').open('w') as f:
         out = csv.writer(f); out.writerow(['row', 'column', 'real', 'imag'])
         for i in range(4):
@@ -147,6 +202,7 @@ def main():
                 out.writerow([BASIS[i], BASIS[j], projected[i, j].real, projected[i, j].imag])
     with (DATA / 'summary_39.csv').open() as f:
         rows = list(csv.DictReader(f))
+    report.update(research_annotations(rows))
     report['summary_rows'] = len(rows)
     report['summary_descriptive'] = {}
     for key in ['Fidelity_reported', 'Concurrence_reported', 'Entropy_reported', 'Duration_sec', 'Temp_average']:
